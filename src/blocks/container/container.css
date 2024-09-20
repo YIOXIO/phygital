@@ -1,0 +1,6 @@
+@import './_hero/container_hero.css';
+
+.container{
+    max-inline-size: 1856px;
+    margin-inline: auto;    
+}

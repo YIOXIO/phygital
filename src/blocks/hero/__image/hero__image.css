@@ -1,0 +1,10 @@
+.hero__image{
+    inline-size: 100%;
+    block-size: 99%;
+    position: absolute;
+    max-inline-size: 1836px;
+    object-fit: cover;
+    object-position: 0 50%;
+    z-index: -1;
+    border-radius: 60px;
+}

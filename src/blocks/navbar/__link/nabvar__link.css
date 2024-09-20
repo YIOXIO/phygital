@@ -1,0 +1,22 @@
+.navbar__link{
+    color: #1652EE;
+    text-align: center;
+    font-family: "Gotham Pro";
+    font-size: clamp(1rem, 0.922rem + 0.391vw, 1.375rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px;
+    letter-spacing: -0.896px;
+    text-transform: lowercase;
+    border-radius: 64px;
+    padding-block: 12.8px;
+    padding-inline: 10px;
+    transition: color,  background-color .3s linear ;
+    text-wrap: nowrap;
+}
+
+.navbar__link:hover{
+    color: #FFF;
+    background-color: #1652EE;
+}
+

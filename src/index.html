@@ -2,13 +2,102 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Эко</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Фиджитал</title>
 </head>
 
-<body>
+<body class="root">
+<header class="header">
+  
+<div class="container">
+    <svg class="header__border" width="1856" height="103" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 38.6666C0 17.3117 17.9086 0 40 0h1776c22.1 0 40 17.3117 40 38.6666v24.7467c0 21.355-17.9 38.6667-40 38.6667h-707.2c-22.09 0-40-17.3117-40-38.6667v-6.1867c0-21.3549-17.91-38.6666-40-38.6666h-83.2c-22.092 0-40 17.3117-40 38.6666v6.1867c0 21.355-17.909 38.6667-40 38.6667H40c-22.0914 0-40-17.3117-40-38.6667V38.6666Z" fill="#fff"/>
+      </svg>
+    <nav class="navbar">
+        <ul class="navbar__list navbar__list_logos">
+            <li>
+            <img class="header__logo header__logo_min-sport" src="<%=require('./img/logos/min-sport-logo.svg')%>" alt="Логотип министерство спорта РФ, на изображение двуглавый орел">    
+            </li>
+            <li>
+            <img class="header__logo" src="<%=require('./img/logos/phygital-logo.png')%>" alt="Логотип фиджитал футбол, на изображение футбольный мяч">    
+            </li>
+            <li>
+            <img class="header__logo" src="<%=require('./img/logos/phygital-logo.png')%>" alt="Логотип фиджитал футбол, на изображение футбольный мяч">    
+            </li>
+        </ul>
+        <ul id="burger-menu"  class="navbar__list navbar__list_menu">
+            <ul>
+                <li>
+                    <a class="navbar__link" href="#">главная</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="#">участники</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="#">регламенты</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="#">соц.сети</a>
+                </li>
+            </ul>
 
+            <ul>
+                <li>
+                    <a class="navbar__link" href="#">омбен опытом</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="#">обучение</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="#">развитие</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="#">контакты</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="#">мероприятия</a>
+                </li>
+            </ul>
+        </ul>
+        <!-- <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> -->
+    </nav>
+</div>
+
+</header>
+
+
+
+
+
+
+
+
+
+
+<main class="main">
+ <section class="hero">
+    <div class="container ">    
+        <img class="hero__image" src="<%=require('./img/hero-background.webp')%>" alt="На изображение высоко-технологичный футболсит бьюищй по футбольному мячу">
+        <img class="hero__mask" src="<%=require('./svg/hero-border.svg')%>">
+        <article class="title-wrapper">
+            <h1 class="hero-title">Фиджитал <br> -футбол</h1>
+            <h2 class="hero-subtitle">– играют <br> все!</h2>
+        </article>
+    </div>
+</section>
+<section class="target">
+    <div class="container">
+        <p class="page-article">цель</p>
+        <h2 class="section-title">Социально-спортивный фестиваль Курской области <span class="section-subtitle">«Фиджитал-футбол – играют все!»</span></h2>
+    </div>
+</section>
+</main>
+<footer class="footer"></footer>
 </body>
 
 </html>

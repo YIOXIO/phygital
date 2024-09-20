@@ -1,0 +1,6 @@
+.header__logo{
+    max-inline-size: 97.6px;
+    inline-size: 100%;
+    object-fit: contain;
+    aspect-ratio: 1;
+}

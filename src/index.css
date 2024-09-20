@@ -1,0 +1,112 @@
+/* Общие стили */
+@import './vendor/normalize.css';
+@import './vendor/global.css';
+@import './vendor/fonts/fonts.css';
+@import './blocks/container/container.css';
+
+
+/* Стили для Header */
+@import './blocks/header/__logo/header__logo.css';
+
+@import './blocks/hero/hero.css';
+
+@import './blocks/burger/burger.css';
+
+@import './blocks/navbar/navbar.css';
+
+
+.header{
+    margin-block-start: clamp(0rem, -0.417rem + 2.083vw, 2rem);
+    margin-inline: clamp(0rem, -0.417rem + 2.083vw, 2rem);
+    position: relative;
+    z-index: 4;
+}
+
+
+.header__border{
+    position: absolute;
+    z-index: -1;
+    top:50%; 
+    left:50%; 
+    transform:translate(-50%, -50%); 
+    border-radius: 60px;
+}
+
+
+
+.navbar__list_logos{
+    background-color: transparent;
+    border: none;
+    gap: 2px;
+    flex: none;
+    display: flex;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 3.6rem;
+}
+
+.hero {
+    position: relative;
+    z-index: 1;
+    margin-block-start: -6rem;
+}
+
+.hero-title{
+    color: #1652EE;
+font-family: 'Unbounded';
+font-size: clamp(2rem, 1.154rem + 4.232vw, 6.063rem);
+font-style: normal;
+font-weight: 700;
+line-height: 97.599%;
+letter-spacing: -4.608px;
+text-align: end;
+
+}
+
+.hero-subtitle{
+    color: #070037;
+    font-family: Unbounded;
+    font-size: clamp(2rem, 1.154rem + 4.232vw, 6.063rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 97.599%; 
+    letter-spacing: -4.608px;
+}
+.title-wrapper{
+    position: absolute;
+    top: 50%;
+    left:4.5%;
+}
+
+
+
+.section-title{
+    color: #1652EE;
+    font-family: 'Unbounded';
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 97.599px; 
+    letter-spacing: -4.608px;
+}
+
+.section-subtitle{
+    color: #070037;
+    font-family: Unbounded;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 97.599px;
+    letter-spacing: -4.608px;
+}
+
+
+.root{
+    background-color: #E8ECFE;
+    background: linear-gradient(180deg, #E8ECFE 0%, #C9EBF8 30.03%, #3AE2F4 48.76%, #476272 73.99%, #494F60 96.22%, #E8ECFE 30%, #C9EBF8 50%, #3AE2F4 73%,#476272 96%,#494F60 30%);
+    min-height: 11000px;
+}
+

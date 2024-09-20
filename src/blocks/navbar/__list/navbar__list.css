@@ -1,0 +1,16 @@
+.navbar__list{
+    display: flex;
+    gap: 13.5rem;
+    align-items: center;
+}
+
+.navbar__list > ul{
+    align-items: center;
+    background-color: #ebeeff;
+    border: 1.6px solid #e3ddf2;
+    border-radius: 64px;
+    display: flex;
+    gap: 5px;
+    padding-block: 19px;
+    padding-inline: 7px;
+}

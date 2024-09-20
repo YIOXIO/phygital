@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/Gotham-pro/GothamPro.eot');
+    src: local('Gotham Pro'), local('GothamPro'),
+        url('../fonts/Gotham-pro/GothamPro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gotham-pro/GothamPro.woff2') format('woff2'),
+        url('../fonts/Gotham-pro/GothamPro.woff') format('woff'),
+        url('../fonts/Gotham-pro/GothamPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-Medium.eot');
+    src: local('Inter Medium'), local('Inter-Medium'),
+        url('../fonts/Inter/Inter-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Inter/Inter-Medium.woff2') format('woff2'),
+        url('../fonts/Inter/Inter-Medium.woff') format('woff'),
+        url('../fonts/Inter/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url('../fonts/Unbounded/Unbounded-Medium.eot');
+    src: local('Unbounded Medium'), local('Unbounded-Medium'),
+        url('../fonts/Unbounded/Unbounded-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Unbounded/Unbounded-Medium.woff2') format('woff2'),
+        url('../fonts/Unbounded/Unbounded-Medium.woff') format('woff'),
+        url('../fonts/Unbounded/Unbounded-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url('../fonts/Unbounded/Unbounded-Bold.eot');
+    src: local('Unbounded Bold'), local('Unbounded-Bold'),
+        url('../fonts/Unbounded/Unbounded-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Unbounded/Unbounded-Bold.woff2') format('woff2'),
+        url('../fonts/Unbounded/Unbounded-Bold.woff') format('woff'),
+        url('../fonts/Unbounded/Unbounded-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,37 @@
+.burger-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger-menu span{
+    background-color: #1652EE;
+    block-size: 5px;
+    inline-size: 50px;
+    display: block;
+    border-radius: 2px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.burger-menu span:nth-child(2){
+    inline-size: 35px;
+
+}
+
+
+/* Активное состояние */
+.burger-menu.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.burger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+
