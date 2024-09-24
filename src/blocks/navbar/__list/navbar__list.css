@@ -1,5 +1,5 @@
 .navbar__list{
-    display: flex;
+    display: none;
     gap: 13.5rem;
     align-items: center;
 }
@@ -13,4 +13,14 @@
     gap: 5px;
     padding-block: 19px;
     padding-inline: 7px;
+}
+
+
+@media (width >= 1200px){
+    .navbar__list{
+        display: flex;
+    }
+    .burger-menu{
+        display: none;
+    }
 }

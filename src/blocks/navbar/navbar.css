@@ -1,2 +1,18 @@
 @import './__link/nabvar__link.css';
 @import './__list/navbar__list.css';
+
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 4.28rem;
+    justify-content: space-between;
+}
+
+
+@media (width >= 1200px){
+    .navbar{
+        justify-content: inherit;
+    }
+}

@@ -42,11 +42,7 @@
     display: flex;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    gap: 3.6rem;
-}
+
 
 .hero {
     position: relative;
@@ -56,20 +52,20 @@
 
 .hero-title{
     color: #1652EE;
-font-family: 'Unbounded';
-font-size: clamp(2rem, 1.154rem + 4.232vw, 6.063rem);
-font-style: normal;
-font-weight: 700;
-line-height: 97.599%;
-letter-spacing: -4.608px;
-text-align: end;
+    font-family: 'Unbounded';
+    font-size: clamp(1.75rem, 0.071rem + 5.165vw, 6.063rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 97.599%;
+    letter-spacing: -4.608px;
+    text-align: end;
 
 }
 
 .hero-subtitle{
     color: #070037;
     font-family: Unbounded;
-    font-size: clamp(2rem, 1.154rem + 4.232vw, 6.063rem);
+    font-size: clamp(1.75rem, 0.071rem + 5.165vw, 6.063rem);
     font-style: normal;
     font-weight: 700;
     line-height: 97.599%; 
@@ -86,27 +82,408 @@ text-align: end;
 .section-title{
     color: #1652EE;
     font-family: 'Unbounded';
-    font-size: 80px;
+    font-size: clamp(1.75rem, 1.073rem + 3.385vw, 5rem);
     font-style: normal;
     font-weight: 700;
-    line-height: 97.599px; 
+    line-height: 97.6%; 
     letter-spacing: -4.608px;
+    /* margin-inline: 97.6px 59.2px; */
+    margin-block: 0 111.2px;
+}
+
+.section-title_news{
+    color: #FFF;
 }
 
 .section-subtitle{
     color: #070037;
-    font-family: Unbounded;
-    font-size: 80px;
+    font-family: 'Unbounded';
+    font-size: clamp(1.75rem, 1.073rem + 3.385vw, 5rem);
     font-style: normal;
     font-weight: 700;
-    line-height: 97.599px;
+    line-height: 97.6%;
     letter-spacing: -4.608px;
 }
 
 
 .root{
-    background-color: #E8ECFE;
-    background: linear-gradient(180deg, #E8ECFE 0%, #C9EBF8 30.03%, #3AE2F4 48.76%, #476272 73.99%, #494F60 96.22%, #E8ECFE 30%, #C9EBF8 50%, #3AE2F4 73%,#476272 96%,#494F60 30%);
-    min-height: 11000px;
+    /* background-color: #E8ECFE; */
+    background: linear-gradient(
+        180deg, 
+        #E8ECFE 0%, 
+        #C9EBF8 14.03%, 
+        #3AE2F4 28.36%, 
+        #476272 51.34%, 
+        #494F60 96.22%
+    ),
+    linear-gradient(
+       180deg,
+        #494F60 96.22%,
+        #476272 73.99%, 
+        #3AE2F4 48.76%, 
+        #C9EBF8 30.03%, 
+        #E8ECFE 0%
+    ),
+    linear-gradient(
+        180deg, 
+        #E8ECFE 0%, 
+        #C9EBF8 40.49%, 
+        #3AE2F4 64.64%, 
+        #476272 90.59%, 
+        #494F60 96.22%
+    ),
+    linear-gradient(
+        180deg, 
+        #494F60 96.22%,
+        #476272 87.56%, 
+        #3AE2F4 47.1%, 
+        #C9EBF8 24.41%, 
+        #E8ECFE 0%
+    );
+    /* min-height: 10000px; */
+    animation: linearGradient 3.1s infinite linear alternate;
 }
 
+.page-article{
+    color: #1652ee;
+    font-family: 'Gotham Pro';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -.8px;
+    line-height: 27.2px;
+    padding-block-start: 30px;
+    text-align: center;
+    text-transform: lowercase;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 8.3%;
+    
+}
+.container__hero{
+    position: relative;
+}
+
+
+.target-title{
+    color: #070037;
+    font-family: 'Unbounded';
+    font-size: 35.2px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 86.4px; /* 245.455% */
+    letter-spacing: -1.6px;
+    text-transform: capitalize;
+}
+
+.target-description{
+    color: #83809B;
+    font-family: "Gotham Pro";
+    font-size: 27.2px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 147.059% */
+    letter-spacing: -1.6px;
+    max-inline-size: 1300px;
+}
+
+.target-wrapper{
+    background-image: url('./svg/target-border.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-block: 32px 42px;
+    padding-inline: 68px 44px;
+}
+
+.target{
+    /* background: linear-gradient(180deg, #E8ECFE 0%, #C9EBF8 14.03%, #3AE2F4 28.36%, #476272 51.34%, #494F60 96.22%); */
+    padding-block-end: 140px;
+}
+
+.page-article_project{
+    background-image: url('./svg/page-article-project.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    block-size: 140px;
+    inline-size: 320px;
+    transform: translate(2%, -10%);
+}
+
+
+.project__card{
+    padding-block: 46.4px 64px;
+    padding-inline: 38.4px 32px;
+    border-radius: 43.2px;
+    background-color: #FFF;
+    block-size: 100%;
+}
+
+.project__icon{
+    max-inline-size: 81.6px;
+    object-fit: contain;
+    inline-size: 100%;
+    margin-block-end: 28.8px;
+}
+
+.project__description{
+    color: #83809B;
+    font-family: 'Inter';
+    font-size: 27.2px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 147.059% */
+    letter-spacing: -1.6px;
+}
+
+.project__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 35.2px;
+}
+
+.section-title_mission{
+    color: #fff;
+}
+
+
+.mission__card{
+    background-repeat: no-repeat;
+    background-image: url('./svg/background-mission-card.svg');
+    border-radius: 31.389px;
+    padding-block:108.12px 91.2px;
+    padding-inline: 38.4px 26.68px;
+    block-size: 100%;
+    background-size: cover;
+}
+
+.mission__list  li:nth-child(1) > .mission__card:first-child{
+    background-image: linear-gradient(0deg, #C1E2FF 0%, #FFF 42.71%);
+}
+
+.mission__card-name{
+    color: #070037;
+    font-family: 'Unbounded';
+    font-size: 35.2px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 86.4px; /* 245.455% */
+    letter-spacing: -1.6px;
+    text-transform: capitalize;
+}
+
+.mission__card-description{
+    color: #83809B;
+    font-family: "Gotham Pro";
+    font-size: 27.2px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 147.059% */
+    letter-spacing: -1.6px;
+}
+
+.mission__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18.84px;
+}
+
+.mission__list > li{
+    flex: 1 0 24%;
+}
+.mission__list > li:nth-child(3){
+    transform: translateY(-30px);
+}
+
+
+.team__card-name{
+    color: #070037;
+    font-family: 'Unbounded';
+    font-size: 35.2px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 113.636% */
+    letter-spacing: -1.6px;
+    margin-block-end: 19.2px;
+}
+
+.team__card-description{
+    color: #83809B;
+    font-family: "Gotham Pro";
+    font-size: 27.2px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 147.059% */
+    letter-spacing: -1.6px;
+}
+
+.team__card{
+    max-inline-size: 530px;
+    margin-block-end: 100px;
+}
+
+.team__card-img{
+    inline-size: 100%;
+    object-fit: cover;
+    margin-block-end: 35.2px;
+    border-radius: 42.3px;
+    aspect-ratio: 1;
+}
+
+.hero,.target, .project, .mission, .team, .partner{
+    margin-block-end: 102.4px;
+}
+
+.partner__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 12px;
+
+}
+
+.partner__wrapper{
+    background: #fff;
+    border-radius: 43.2px;
+    max-block-size: 201.6px;
+    padding-block: 64px;
+    padding-inline: 60.91px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.regulation__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(552px,1fr));
+}
+
+.regulation__card{
+    display: flex;
+    padding: 46.4px 32px 64px 38.4px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28.8px;
+    flex-shrink: 0;
+    border-radius: 43.2px;
+    background: #FFF;    
+    max-inline-size: 552px;   
+}
+
+.regulation__card-img{
+    max-inline-size: 81.6px;
+    object-fit: contain;
+    inline-size: 100%;
+}
+
+.regulation__card-description{
+    color: #83809B;
+    font-family: 'Inter';
+    font-size: 27.2px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 147.059% */
+    letter-spacing: -1.6px;
+}
+
+.regulation__card-button{
+    border-radius: 47.084px;
+    border: 1.6px solid #E3DDF2;
+    background-color: #EBEEFF;
+    color: #1652EE;
+    text-align: center;
+    font-family: "Gotham Pro";
+    font-size: 27.2px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px; /* 105.882% */
+    letter-spacing: -0.896px;
+    padding-block: 22px;
+    padding-inline: 164px;
+    transition:background-color .3s linear, color .3s linear;;
+}
+
+.regulation__card-button:hover{
+    background-color: #1652EE;
+    color: #EBEEFF;
+}
+
+.news__card{
+    border-radius: 43.2px 43.2px 43.2px 0px;
+    cursor: pointer;
+}
+
+
+.news__card-img{
+    inline-size: 100%;
+    object-fit: cover;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    vertical-align: bottom;
+    max-block-size: 330px;
+    aspect-ratio: 1;
+}
+
+.news__wrapper{
+    background-image: url('./svg/news-card-border.svg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-inline: 38.4px 32px;
+    padding-block: 46.4px 64px;
+    position: relative;
+    min-block-size: 342px;
+    margin-block-start: -1px;
+}
+
+.news__card-title{
+    color: #070037;
+    font-family: 'Unbounded';
+    font-size: 35.2px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 113.636% */
+    letter-spacing: -1.6px;
+    margin-block-end: 28.8px;
+}
+
+.news__card-description{
+    color: #83809B;
+    font-family: 'Inter';
+    font-size: 27.2px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 147.059% */
+    letter-spacing: -1.6px;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    display: -webkit-box;
+    -webkit-line-clamp: 4; 
+    -webkit-box-orient: vertical;
+}
+
+.swiper-news-slide{
+    max-inline-size: 553.58px;
+}
+
+.news__card-icon{
+    background-color: #EBEEFF;
+    border-radius: 60px;
+    max-inline-size: 80px;
+    max-block-size: 80px;
+    object-fit: contain;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition:  background-color .3s , rotate .2s linear;
+
+}
+
+.news__card path{
+    stroke: #1652EE;
+}
+.news__card:hover .news__card-icon path{
+    stroke: #FFF;    
+
+}
+.news__card:hover .news__card-icon{
+    rotate: -45deg;
+    background-color: #1652EE;
+}

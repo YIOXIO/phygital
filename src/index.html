@@ -10,8 +10,8 @@
 <body class="root">
 <header class="header">
   
-<div class="container">
-    <svg class="header__border" width="1856" height="103" fill="none" xmlns="http://www.w3.org/2000/svg">
+<div class="container-xl">
+    <svg class="header__border" id="dynamic-svg" width="1856" height="103" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M0 38.6666C0 17.3117 17.9086 0 40 0h1776c22.1 0 40 17.3117 40 38.6666v24.7467c0 21.355-17.9 38.6667-40 38.6667h-707.2c-22.09 0-40-17.3117-40-38.6667v-6.1867c0-21.3549-17.91-38.6666-40-38.6666h-83.2c-22.092 0-40 17.3117-40 38.6666v6.1867c0 21.355-17.909 38.6667-40 38.6667H40c-22.0914 0-40-17.3117-40-38.6667V38.6666Z" fill="#fff"/>
       </svg>
     <nav class="navbar">
@@ -60,12 +60,13 @@
                 </li>
             </ul>
         </ul>
-        <!-- <div class="burger-menu">
+        <div class="burger-menu">
             <span></span>
             <span></span>
             <span></span>
-        </div> -->
+        </div>
     </nav>
+
 </div>
 
 </header>
@@ -77,27 +78,299 @@
 
 
 
-
-
 <main class="main">
  <section class="hero">
-    <div class="container ">    
+    <div class="container-xl">    
         <img class="hero__image" src="<%=require('./img/hero-background.webp')%>" alt="На изображение высоко-технологичный футболсит бьюищй по футбольному мячу">
         <img class="hero__mask" src="<%=require('./svg/hero-border.svg')%>">
         <article class="title-wrapper">
             <h1 class="hero-title">Фиджитал <br> -футбол</h1>
             <h2 class="hero-subtitle">– играют <br> все!</h2>
         </article>
+        <img class="hero__mask-bottom" src="<%=require('./svg/hero-border_bottom.svg')%>">
+        <p class="page-article">цель</p>
+
     </div>
 </section>
 <section class="target">
-    <div class="container">
-        <p class="page-article">цель</p>
+    <div class="container-xl">
+        <div class="container-l">
         <h2 class="section-title">Социально-спортивный фестиваль Курской области <span class="section-subtitle">«Фиджитал-футбол – играют все!»</span></h2>
+        <article class="target-wrapper">
+            <p class="target-title">Цель</p>
+            <p class="target-description">Внедрение социально-спортивной модели вовлечения школьников и студентов, включая семьи беженцев и вынужденных переселенцев (ДНР, ЛНР, Запорожской и Херсонской областей) в массовый спорт через фиджитал-футбол в Курской области</p>
+        </article>
+    </div>
+
+    </div>
+</section>
+<section class="project">
+    <div class="container-xl container-project">
+        <div class="container-l">
+        <div id="svg-container" class="page-article page-article_project">задачи</div>
+        <h2 class="section-title">Задачи <span class="section-subtitle">проекта</span></h2>
+        <ul class="project__list">
+            <li>
+                <article class="project__card">
+                    <img class="project__icon" src="<%=require('./svg/icons/icon1.svg')%>" alt="">
+                    <p class="project__description">Разработать и реализовать социально-спортивную модель организационно-методического сопровождения массовых спортивных мероприятий 
+                        по фиджитал-футболу для школьников и студентов, включая семьи беженцев и вынужденных переселенцев (ДНР, ЛНР, Запорожской и Херсонской областей) в Курской области, в том числе в сельской местности</p>
+                </article>
+            </li>
+            <li>
+                <article class="project__card">
+                    <img class="project__icon" src="<%=require('./svg/icons/icon2.svg')%>" alt="">
+                    <p class="project__description">Разработать и провести образовательный курс для учителей, тренеров, судей и волонтеров по организации соревнований по фиджитал-футболу
+                    </p>
+                </article>
+            </li>
+            <li>
+                <article class="project__card">
+                    <img class="project__icon" src="<%=require('./svg/icons/icon3.svg')%>" alt="">
+                    <p class="project__description">Организовать и провести социально-спортивный фестиваль «Фиджитал-футбол – играют все!» 
+                        с целью повышения уровня психофизического 
+                        и интеллектуального здоровья, успешной социализации участников Фестиваля в условиях современных вызовов                        
+                        </p>
+                </article>
+            </li>
+            <li>
+                <article class="project__card">
+                    <img class="project__icon" src="<%=require('./svg/icons/icon4.svg')%>" alt="">
+                    <p class="project__description">Создать цифровую платформу для обмена опытом по организации Фестиваля «Фиджитал-футбол – играют все!», создания сообщества специалистов для взаимодействия 
+                        в сфере развития фиджитал-футбола
+                        
+                        </p>
+                </article>
+            </li>
+            <li>
+                <article class="project__card">
+                    <img class="project__icon" src="<%=require('./svg/icons/icon5.svg')%>" alt="">
+                    <p class="project__description">Провести стратегическую сессию специалистов для разработки дорожной карты по организации в следующем проекте кластерного социально-спортивного фестиваля «Фиджитал-футбол – играют все!»
+
+                        </p>
+                </article>
+            </li>
+            <li>
+                <article class="project__card">
+                    <img class="project__icon" src="<%=require('./svg/icons/icon6.svg')%>" alt="">
+                    <p class="project__description">Провести социологическое исследование участников 
+                        по улучшению качества проведения Фестиваля «Фиджитал-футбол – играют все!»</p>
+                </article>
+            </li>
+        </ul>
+    </div>
+    </div>
+</section>
+<section class="mission">
+    <div class="container-xl ">
+    <div class="container-l">
+        <h2 class="section-title section-title_mission">Миссия</h2>
+        <ul class="mission__list">
+            <li>
+                <article class="mission__card">
+                    <h3 class="mission__card-name">Включение</h3>
+                    <p class="mission__card-description">фиджитал спорта во Всероссийский реестр видов спорта</p>
+                </article>
+            </li>
+            <li>
+                <article class="mission__card">
+                    <h3 class="mission__card-name">Продвижение</h3>
+                    <p class="mission__card-description">технологичных и интеллектуальных видов спорта в рамках программ «Приоритет-2030» и «Цифровая экономика Российской Федерации»</p>
+                </article>
+            </li>
+            <li>
+                <article class="mission__card">
+                    <h3 class="mission__card-name">Создание</h3>
+                    <p class="mission__card-description">Всероссийской Федерации Фиджитал Спорта</p>
+                </article>
+            </li>
+            <li>
+                <article class="mission__card">
+                    <h3 class="mission__card-name">Организация</h3>
+                    <p class="mission__card-description">соревнований по видам фиджитал спорта</p>
+                </article>
+            </li>
+        </ul>
+    </div>
+</div>
+</section>
+<section class="team">
+    <div class="container-xl container-team">
+        <div class="container-l">
+        <h2 class="section-title">Команда <span class="section-subtitle">проекта</span></h2>
+    
+    <article class="swiper">
+    
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide">
+        <article class="team__card">
+            <img class="team__card-img" src="<%=require('./img/people/farzaliev.png')%>" alt="">
+            <h3 class="team__card-name">Джавид Аллахверди оглы Фарзалиев</h3>
+            <p class="team__card-description">Старший преподаватель кафедры физического воспитания <br>
+                РЭУ им. Г.В. Плеханова</p>
+        </article>
+      </li>
+      <li class="swiper-slide">
+        <article class="team__card">
+            <img class="team__card-img" src="<%=require('./img/people/uvarova.png')%>" alt="">
+            <h3 class="team__card-name">Наталья Николаевна Уварова</h3>
+            <p class="team__card-description">Доцент кафедры физического воспитания,
+                РЭУ им. Г.В. Плеханова</p>
+        </article>
+      </li>
+      <li class="swiper-slide">
+        <article class="team__card">
+            <img class="team__card-img" src="<%=require('./img/people/anver.png')%>" alt="">
+            <h3 class="team__card-name">Анвер Озоль</h3>
+            <p class="team__card-description">Студент 4 курса <br>
+                РЭУ им. Г.В. Плеханова</p>
+        </article>
+      </li>
+      <li class="swiper-slide">
+        <article class="team__card">
+            <img class="team__card-img" src="<%=require('./img/people/dubrov.png')%>" alt="">
+            <h3 class="team__card-name">Дубров Алексей Александрович</h3>
+            <p class="team__card-description">Преподаватель кафедры физического воспитания, аспирант <br>
+                РЭУ им. Г.В. Плеханова</p>
+        </article>
+      </li>
+      <li class="swiper-slide">
+        <article class="team__card">
+            <img class="team__card-img" src="<%=require('./img/people/glazkova.png')%>" alt="">
+            <h3 class="team__card-name">Галина Борисовна Глазкова</h3>
+            <p class="team__card-description">Доцент кафедры физического воспитания <br>
+                РЭУ им. Г.В. Плеханова</p>
+        </article>
+      </li>
+    </ul>
+    </article>
+</section>
+<section class="partner">
+    <div class="container-xl">
+        <div class="container-l">
+            <h2 class="section-title">Партнеры <span class="section-subtitle">и спонсоры проекта</span></h2>
+            <ul class="partner__list">
+                <li>
+                    <article class="partner__wrapper">
+                        <img src="<%=require('./img/logos/min-sport-logo.png')%>" alt="">
+                    </article>
+                </li>
+                <li>
+                    <article class="partner__wrapper">
+                        <img src="<%=require('./img/logos/phygital-logo.png')%>" alt="">
+                    </article>
+                </li>
+                <li>
+                    <article class="partner__wrapper">
+                        <img src="<%=require('./img/logos/min-sport-logo.png')%>" alt="">
+                    </article>
+                </li>
+                <li>
+                    <article class="partner__wrapper">
+                        <img src="<%=require('./img/logos/phygital-logo.png')%>" alt="">
+
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="regulation">
+    <div class="container-xl container-regulation">
+        <div class="container-l">
+            <h2 class="section-title">Регламентирующие <span class="section-subtitle">документы проекта</span></h2>
+            <ul class="regulation__list">
+                <li>
+                <article class="regulation__card">
+                    <img src="<%=require('./svg/icons/icon1.svg')%>" alt="" class="regulation__card-img">
+                    <p class="regulation__card-description">
+                        Создать цифровую платформу для обмена опытом по организации Фестиваля «Фиджитал-футбол 
+                    </p>
+                    <a class="regulation__card-button" href="#">Скачать</a>
+                </article>
+                </li>
+                <li>
+                <article class="regulation__card">
+                    <img src="<%=require('./svg/icons/icon1.svg')%>" alt="" class="regulation__card-img">
+                    <p class="regulation__card-description">
+                        Провести стратегическую сессию специалистов для разработки дорожной карты 
+                    </p>
+                    <a class="regulation__card-button" href="#">Скачать</a>
+                </article>
+                </li>
+                <li>
+                <article class="regulation__card">
+                    <img src="<%=require('./svg/icons/icon1.svg')%>" alt="" class="regulation__card-img">
+                    <p class="regulation__card-description">
+                        Провести социологическое исследование участников по улучшению качества  
+                    </p>
+                    <a class="regulation__card-button" href="#">Скачать</a>
+                </article>
+                </li>
+            </ul>
+        </div>
+    </div>     
+</section>
+<section class="news">
+    <div class="container-xl">
+        <div class="container-l">
+            <h2 class="section-title section-title_news">Новости</h2>
+            <article class="swiper">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide swiper-news-slide">
+                    <a class="news__card">
+                        <img class="news__card-img" src="https://sochi.ru/upload/iblock/251/2517e52b2a905ccf3d43a19c0aebb71c.jpg" alt="">
+                        <article class="news__wrapper">
+                            <h3 class="news__card-title">10 сентября</h3>
+                            <p class="news__card-description">Фиджитал Игры 2024, Москва, сентябрь 2024 Фиджитал Игры 2024, Москва, сентябрь 2024Фиджитал Игры 2024, Москва, сентябрь 2024Фиджитал Игры 2024, Москва, сентябрь 2024Фиджитал Игры 2024, Москва, сентябрь 2024</p>
+                            <svg class="news__card-icon" xmlns="http://www.w3.org/2000/svg" width="114" height="114" viewBox="0 0 114 114" fill="none">
+                                <path d="M49.531 48.6477L65.531 64.6478M65.531 64.6478L65.5309 49.2878M65.531 64.6478L50.1709 64.6478" stroke="white" stroke-width="2.88" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                        </article>
+                    </a>
+                  </li> 
+                  <li class="swiper-slide swiper-news-slide">
+                    <a class="news__card">
+                        <img class="news__card-img" src="https://backpagefootball.com/wp-content/uploads/2013/07/o-FOOTBALL-MATCH-TRUQU-facebook.jpg" alt="">
+                        <article class="news__wrapper">
+                            <h3 class="news__card-title">10 сентября</h3>
+                            <p class="news__card-description">Фиджитал Игры 2024, Москва, сентябрь 2024 Фиджитал Игры 2024, Москва, сентябрь 2024Фиджитал Игры 2024, Москва, сентябрь 2024Фиджитал Игры 2024, Москва, сентябрь 2024Фиджитал Игры 2024, Москва, сентябрь 2024</p>
+                            <svg class="news__card-icon" xmlns="http://www.w3.org/2000/svg" width="114" height="114" viewBox="0 0 114 114" fill="none">
+                                <path d="M49.531 48.6477L65.531 64.6478M65.531 64.6478L65.5309 49.2878M65.531 64.6478L50.1709 64.6478" stroke="white" stroke-width="2.88" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                        </article>
+                    </a>
+                  </li> 
+                  <li class="swiper-slide swiper-news-slide">
+                    <a class="news__card">
+                        <img class="news__card-img" src="https://pic.rutubelist.ru/video/07/d3/07d361270c370d05e7389a07a66a92f3.jpg" alt="">
+                        <article class="news__wrapper">
+                            <h3 class="news__card-title">10 сентября</h3>
+                            <p class="news__card-description">Фиджитал Игры 2024, Москва, сентябрь 2024 Фиджитал Игры 2024, Москва, сентябрь 2024Фиджитал Игры 2024, Москва, сентябрь 2024Фиджитал Игры 2024, Москва, сентябрь 2024Фиджитал Игры 2024, Москва, сентябрь 2024</p>
+                            <svg class="news__card-icon" xmlns="http://www.w3.org/2000/svg" width="114" height="114" viewBox="0 0 114 114" fill="none">
+                                <path d="M49.531 48.6477L65.531 64.6478M65.531 64.6478L65.5309 49.2878M65.531 64.6478L50.1709 64.6478" stroke="white" stroke-width="2.88" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                        </article>
+                    </a>
+                  </li> 
+                  <li class="swiper-slide swiper-news-slide">
+                    <a class="news__card">
+                        <img class="news__card-img" src="https://sochi.ru/upload/iblock/251/2517e52b2a905ccf3d43a19c0aebb71c.jpg" alt="">
+                        <article class="news__wrapper">
+                            <h3 class="news__card-title">10 сентября</h3>
+                            <p class="news__card-description">Фиджитал Игры 2024, Москва, сентябрь 2024 Фиджитал Игры 2024, Москва, сентябрь 2024Фиджитал Игры 2024, Москва, сентябрь 2024Фиджитал Игры 2024, Москва, сентябрь 2024Фиджитал Игры 2024, Москва, сентябрь 2024</p>
+                            <svg class="news__card-icon" xmlns="http://www.w3.org/2000/svg" width="114" height="114" viewBox="0 0 114 114" fill="none">
+                                <path d="M49.531 48.6477L65.531 64.6478M65.531 64.6478L65.5309 49.2878M65.531 64.6478L50.1709 64.6478" stroke="white" stroke-width="2.88" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                        </article>
+                    </a>
+                  </li> 
+                </ul>
+                </article>
+        </div>
     </div>
 </section>
 </main>
 <footer class="footer"></footer>
 </body>
-
 </html>

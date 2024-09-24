@@ -1,5 +1,14 @@
 .hero__mask{
     inline-size: 100%;
     object-fit: cover;
-    border-radius: 54px;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 50px;
+}
+
+.hero__mask-bottom{
+    bottom: -7%;
+    left: 50%;
+    position: absolute;
+    z-index: -1;
+    transform: translate(-50%, 0);
 }

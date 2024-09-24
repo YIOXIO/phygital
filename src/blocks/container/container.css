@@ -1,6 +1,37 @@
 @import './_hero/container_hero.css';
 
-.container{
+.container-l{
+    max-inline-size: 1763.2px;
+    margin-inline: auto;
+    padding-block-start: 150px;
+}
+
+.container-xl{
     max-inline-size: 1856px;
-    margin-inline: auto;    
+    margin-inline: auto;
+    padding-inline: 1.5vw;
+    position: relative;
+}
+
+.container-project{
+    background-image: linear-gradient(0deg, #C7E6FF -0.1%, #E6EBFF 74.97%);
+    border-radius: 60px;
+    padding-block-end: 184px;
+}
+
+.container-team{
+    background-color: #FFF;
+    border-radius: 60px;
+}
+
+.container-regulation{
+    border-radius: 40px 40px 0px 0px;
+background: linear-gradient(0deg, #C7E6FF -0.1%, #E6EBFF 74.97%);
+padding-block-end: 72px;
+}
+
+@media (width >= 1240px){
+    .container-xl{
+        padding-inline: 0;
+    }
 }
