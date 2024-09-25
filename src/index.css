@@ -13,6 +13,11 @@
 @import './blocks/burger/burger.css';
 
 @import './blocks/navbar/navbar.css';
+@import './blocks/page-articles.css';
+
+
+@import './blocks/footer.css';
+
 
 
 .header{
@@ -107,59 +112,10 @@
 
 
 .root{
-    /* background-color: #E8ECFE; */
-    background: linear-gradient(
-        180deg, 
-        #E8ECFE 0%, 
-        #C9EBF8 14.03%, 
-        #3AE2F4 28.36%, 
-        #476272 51.34%, 
-        #494F60 96.22%
-    ),
-    linear-gradient(
-       180deg,
-        #494F60 96.22%,
-        #476272 73.99%, 
-        #3AE2F4 48.76%, 
-        #C9EBF8 30.03%, 
-        #E8ECFE 0%
-    ),
-    linear-gradient(
-        180deg, 
-        #E8ECFE 0%, 
-        #C9EBF8 40.49%, 
-        #3AE2F4 64.64%, 
-        #476272 90.59%, 
-        #494F60 96.22%
-    ),
-    linear-gradient(
-        180deg, 
-        #494F60 96.22%,
-        #476272 87.56%, 
-        #3AE2F4 47.1%, 
-        #C9EBF8 24.41%, 
-        #E8ECFE 0%
-    );
-    /* min-height: 10000px; */
-    animation: linearGradient 3.1s infinite linear alternate;
+    background: linear-gradient(180deg,#e8ecfe 4% 13%,#c9ebf8 14.03%,#3ae2f4 15.36%,#476272 27.34% 26%,#494f60 34.22%,#494f60 40%,#476272 42%,#3ae2f4 48%,#c9ebf8 54%,#e8ecff 61%,#e8ecfe 51%,#c9ebf8 66.49%,#3ae2f4 70.64%,#476272 76.59%,#494F60 82%,#494f60 82%,#476272 84%,#3ae2f4 91%,#c9ebf8 94%,#e8ecfe 100%);
+    zoom: .85;
 }
 
-.page-article{
-    color: #1652ee;
-    font-family: 'Gotham Pro';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: -.8px;
-    line-height: 27.2px;
-    padding-block-start: 30px;
-    text-align: center;
-    text-transform: lowercase;
-    position: absolute;
-    transform: translateX(-50%);
-    left: 8.3%;
-    
-}
 .container__hero{
     position: relative;
 }
@@ -200,14 +156,6 @@
     padding-block-end: 140px;
 }
 
-.page-article_project{
-    background-image: url('./svg/page-article-project.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    block-size: 140px;
-    inline-size: 320px;
-    transform: translate(2%, -10%);
-}
 
 
 .project__card{
@@ -329,9 +277,9 @@
     aspect-ratio: 1;
 }
 
-.hero,.target, .project, .mission, .team, .partner{
+/* .hero,.target, .project, .mission, .team, .partner{
     margin-block-end: 102.4px;
-}
+} */
 
 .partner__list{
     display: grid;
@@ -486,4 +434,31 @@
 .news__card:hover .news__card-icon{
     rotate: -45deg;
     background-color: #1652EE;
+}
+
+.news__button{
+    color: #FFF;
+    text-align: center;
+    font-family: "Gotham Pro";
+    font-size: 27.2px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px; /* 105.882% */
+    letter-spacing: -0.896px;
+    padding: 22.4px 20.6px;
+    padding-inline: 86.4px 24.88px;
+    background-color: #1652EE;
+    border-radius: 47.084px;
+    display: flex;
+    max-inline-size: 476px;
+    gap: 35px;
+}
+
+.news__slider{
+    margin-block-end: 124px;
+}
+
+.news__button img{
+    padding-block-start: 5px;
+    inline-size: 12px;
 }

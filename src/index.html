@@ -79,6 +79,7 @@
 
 
 <main class="main">
+
  <section class="hero">
     <div class="container-xl">    
         <img class="hero__image" src="<%=require('./img/hero-background.webp')%>" alt="На изображение высоко-технологичный футболсит бьюищй по футбольному мячу">
@@ -106,8 +107,12 @@
 </section>
 <section class="project">
     <div class="container-xl container-project">
+        <article class="page-article-top page-article-top_project">
+            <svg xmlns="http://www.w3.org/2000/svg" width="380" height="183" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M252.778 37.1967c0-20.3222-16.474-36.796798-36.797-36.796798H111.99c-20.322 0-36.7966 16.474598-36.7966 36.796798 0 20.3222-16.4746 36.7967-36.7968 36.7967h-.7999C16.8326 73.9934 0 90.8261 0 111.59v31.197c0 22.09 17.9071 39.997 39.9965 39.997H339.17c22.089 0 39.997-17.907 39.997-39.997V113.99c0-22.0895-17.908-39.9966-39.997-39.9966h-49.595c-20.323 0-36.797-16.4745-36.797-36.7967Z" fill="#E7ECFF"/>
+              </svg>
+            <p>Задачи</p></article>
         <div class="container-l">
-        <div id="svg-container" class="page-article page-article_project">задачи</div>
         <h2 class="section-title">Задачи <span class="section-subtitle">проекта</span></h2>
         <ul class="project__list">
             <li>
@@ -159,6 +164,9 @@
             </li>
         </ul>
     </div>
+    <article class="page-article-bottom page-article-bottom-test">
+          <p>Миссия</p>
+    </article>
     </div>
 </section>
 <section class="mission">
@@ -192,58 +200,73 @@
             </li>
         </ul>
     </div>
+    
 </div>
 </section>
 <section class="team">
     <div class="container-xl container-team">
+        <article class="page-article-top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="380" height="183" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M252.778 37.1967c0-20.3222-16.474-36.796798-36.797-36.796798H111.99c-20.322 0-36.7966 16.474598-36.7966 36.796798 0 20.3222-16.4746 36.7967-36.7968 36.7967h-.7999C16.8326 73.9934 0 90.8261 0 111.59v31.197c0 22.09 17.9071 39.997 39.9965 39.997H339.17c22.089 0 39.997-17.907 39.997-39.997V113.99c0-22.0895-17.908-39.9966-39.997-39.9966h-49.595c-20.323 0-36.797-16.4745-36.797-36.7967Z" fill="#FFF"/>
+              </svg>
+            <p>Команда</p></article>
+
         <div class="container-l">
         <h2 class="section-title">Команда <span class="section-subtitle">проекта</span></h2>
     
-    <article class="swiper">
-    
-    <ul class="swiper-wrapper">
-      <li class="swiper-slide">
-        <article class="team__card">
-            <img class="team__card-img" src="<%=require('./img/people/farzaliev.png')%>" alt="">
-            <h3 class="team__card-name">Джавид Аллахверди оглы Фарзалиев</h3>
-            <p class="team__card-description">Старший преподаватель кафедры физического воспитания <br>
-                РЭУ им. Г.В. Плеханова</p>
+        <article class="swiper">
+
+            <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <article class="team__card">
+                    <img class="team__card-img" src="<%=require('./img/people/farzaliev.png')%>" alt="">
+                    <h3 class="team__card-name">Джавид Аллахверди оглы Фарзалиев</h3>
+                    <p class="team__card-description">Старший преподаватель кафедры физического воспитания <br>
+                        РЭУ им. Г.В. Плеханова</p>
+                </article>
+            </li>
+            <li class="swiper-slide">
+                <article class="team__card">
+                    <img class="team__card-img" src="<%=require('./img/people/uvarova.png')%>" alt="">
+                    <h3 class="team__card-name">Наталья Николаевна Уварова</h3>
+                    <p class="team__card-description">Доцент кафедры физического воспитания,
+                        РЭУ им. Г.В. Плеханова</p>
+                </article>
+            </li>
+            <li class="swiper-slide">
+                <article class="team__card">
+                    <img class="team__card-img" src="<%=require('./img/people/anver.png')%>" alt="">
+                    <h3 class="team__card-name">Анвер Озоль</h3>
+                    <p class="team__card-description">Студент 4 курса <br>
+                        РЭУ им. Г.В. Плеханова</p>
+                </article>
+            </li>
+            <li class="swiper-slide">
+                <article class="team__card">
+                    <img class="team__card-img" src="<%=require('./img/people/dubrov.png')%>" alt="">
+                    <h3 class="team__card-name">Дубров Алексей Александрович</h3>
+                    <p class="team__card-description">Преподаватель кафедры физического воспитания, аспирант <br>
+                        РЭУ им. Г.В. Плеханова</p>
+                </article>
+            </li>
+            <li class="swiper-slide">
+                <article class="team__card">
+                    <img class="team__card-img" src="<%=require('./img/people/glazkova.png')%>" alt="">
+                    <h3 class="team__card-name">Галина Борисовна Глазкова</h3>
+                    <p class="team__card-description">Доцент кафедры физического воспитания <br>
+                        РЭУ им. Г.В. Плеханова</p>
+                </article>
+            </li>
+            </ul>
         </article>
-      </li>
-      <li class="swiper-slide">
-        <article class="team__card">
-            <img class="team__card-img" src="<%=require('./img/people/uvarova.png')%>" alt="">
-            <h3 class="team__card-name">Наталья Николаевна Уварова</h3>
-            <p class="team__card-description">Доцент кафедры физического воспитания,
-                РЭУ им. Г.В. Плеханова</p>
+        </div>
+        <article class="page-article-bottom page-article-bottom_partner">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1856" height="114" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M48 0h1768c22.1 0 40 17.9086 40 40v33.6c0 22.0914-17.9 40-40 40H292.8c-16.789 0-30.4-13.6106-30.4-30.4S248.789 52.8 232 52.8H78.4C61.6106 52.8 48 66.4106 48 83.2v6.4c0 13.255-10.7451 24-24 24-13.2548 0-24-10.745-24-24V40C0 17.9086 17.9086 0 40 0h8Z" fill="#FFF"/>
+              </svg>
+              <p>Партнеры</p>
         </article>
-      </li>
-      <li class="swiper-slide">
-        <article class="team__card">
-            <img class="team__card-img" src="<%=require('./img/people/anver.png')%>" alt="">
-            <h3 class="team__card-name">Анвер Озоль</h3>
-            <p class="team__card-description">Студент 4 курса <br>
-                РЭУ им. Г.В. Плеханова</p>
-        </article>
-      </li>
-      <li class="swiper-slide">
-        <article class="team__card">
-            <img class="team__card-img" src="<%=require('./img/people/dubrov.png')%>" alt="">
-            <h3 class="team__card-name">Дубров Алексей Александрович</h3>
-            <p class="team__card-description">Преподаватель кафедры физического воспитания, аспирант <br>
-                РЭУ им. Г.В. Плеханова</p>
-        </article>
-      </li>
-      <li class="swiper-slide">
-        <article class="team__card">
-            <img class="team__card-img" src="<%=require('./img/people/glazkova.png')%>" alt="">
-            <h3 class="team__card-name">Галина Борисовна Глазкова</h3>
-            <p class="team__card-description">Доцент кафедры физического воспитания <br>
-                РЭУ им. Г.В. Плеханова</p>
-        </article>
-      </li>
-    </ul>
-    </article>
+    </div>
 </section>
 <section class="partner">
     <div class="container-xl">
@@ -277,6 +300,12 @@
 </section>
 <section class="regulation">
     <div class="container-xl container-regulation">
+        <article class="page-article-top page-article-top_document">
+            <svg xmlns="http://www.w3.org/2000/svg" width="380" height="183" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M252.778 37.1967c0-20.3222-16.474-36.796798-36.797-36.796798H111.99c-20.322 0-36.7966 16.474598-36.7966 36.796798 0 20.3222-16.4746 36.7967-36.7968 36.7967h-.7999C16.8326 73.9934 0 90.8261 0 111.59v31.197c0 22.09 17.9071 39.997 39.9965 39.997H339.17c22.089 0 39.997-17.907 39.997-39.997V113.99c0-22.0895-17.908-39.9966-39.997-39.9966h-49.595c-20.323 0-36.797-16.4745-36.797-36.7967Z" fill="#E7ECFF"/>
+              </svg>
+            <p>Документы</p>
+        </article>
         <div class="container-l">
             <h2 class="section-title">Регламентирующие <span class="section-subtitle">документы проекта</span></h2>
             <ul class="regulation__list">
@@ -309,13 +338,19 @@
                 </li>
             </ul>
         </div>
+    <article class="page-article-bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1856" height="114" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M48 0h1768c22.1 0 40 17.9086 40 40v33.6c0 22.0914-17.9 40-40 40H292.8c-16.789 0-30.4-13.6106-30.4-30.4S248.789 52.8 232 52.8H78.4C61.6106 52.8 48 66.4106 48 83.2v6.4c0 13.255-10.7451 24-24 24-13.2548 0-24-10.745-24-24V40C0 17.9086 17.9086 0 40 0h8Z" fill="#CBE7FF"/>
+          </svg>
+          <p>Новости</p>
+    </article>
     </div>     
 </section>
 <section class="news">
     <div class="container-xl">
         <div class="container-l">
             <h2 class="section-title section-title_news">Новости</h2>
-            <article class="swiper">
+            <article class="swiper news__slider">
                 <ul class="swiper-wrapper">
                   <li class="swiper-slide swiper-news-slide">
                     <a class="news__card">
@@ -367,10 +402,75 @@
                   </li> 
                 </ul>
                 </article>
+                <a class="news__button" href="#">Смотреть все новости <img src="<%=require('./svg/icons/news-button-arrow.svg')%>" alt=""></a>
         </div>
     </div>
 </section>
 </main>
-<footer class="footer"></footer>
+<footer class="footer">
+    <div class="container-xl">
+        <div class="footer__wrapper">
+            <nav class="footer__nav">
+                <ul class="footer__social-list">
+                    <li>
+                        <a href="#">
+                            <img class="footer__nav-icon" src="<%=require('./svg/social/vk.svg')%>" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="footer__nav-icon" src="<%=require('./svg/social/tg.svg')%>" alt="">
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="footer__nav-icon" src="<%=require('./svg/social/phone.svg')%>" alt="">
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="footer__nav-icon" src="<%=require('./svg/social/mail.svg')%>" alt="">
+
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__nav-list">
+                    <li>
+                        <a class="footer__nav-link" href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a class="footer__nav-link" href="#">участники</a>
+                    </li>
+                    <li>
+                        <a class="footer__nav-link" href="#">регламенты</a>
+                    </li>
+                    <li>
+                        <a class="footer__nav-link" href="#">мероприятия</a>
+                    </li>
+                    <li>
+                        <a class="footer__nav-link" href="#">соц.сети</a>
+                    </li>
+                    <li>
+                        <a class="footer__nav-link" href="#">обмен опытом</a>
+                    </li>
+                    <li>
+                        <a class="footer__nav-link" href="#">обучение</a>
+                    </li>
+                    <li>
+                        <a class="footer__nav-link" href="#">развитие</a>
+                    </li>
+                    <li>
+                        <a class="footer__nav-link" href="#">контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <svg class="footer-element" xmlns="http://www.w3.org/2000/svg" width="474" height="188" viewBox="0 0 474 188" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M385.532 39.8006C385.532 18.151 367.982 0.600586 346.332 0.600586H127.399C105.75 0.600586 88.1992 18.151 88.1992 39.8006C88.1992 61.4502 70.6488 79.0006 48.9992 79.0006H40.1992C18.1079 79.0006 0.199219 96.9092 0.199219 119.001V147.801C0.199219 169.892 18.1079 187.801 40.1992 187.801H433.799C455.89 187.801 473.799 169.892 473.799 147.801V119.001C473.799 96.9092 455.89 79.0006 433.799 79.0006H424.732C403.082 79.0006 385.532 61.4502 385.532 39.8006Z" fill="#E7ECFE"/>
+          </svg>
+    </div>
+</footer>
 </body>
 </html>

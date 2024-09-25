@@ -15,13 +15,13 @@
 
 .container-project{
     background-image: linear-gradient(0deg, #C7E6FF -0.1%, #E6EBFF 74.97%);
-    border-radius: 60px;
+    border-radius: 60px 60px 0 0;
     padding-block-end: 184px;
 }
 
 .container-team{
     background-color: #FFF;
-    border-radius: 60px;
+    border-radius: 60px 60px 0 0;
 }
 
 .container-regulation{
