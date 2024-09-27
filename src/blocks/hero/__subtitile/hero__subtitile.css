@@ -1,0 +1,11 @@
+.hero__subtitle {
+    color: #070037;
+    font-family: 'Unbounded';
+    font-size: clamp(2.125rem, 0.33rem + 4.996vw, 6.063rem);
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -1.908px;
+    line-height: 97.599%;
+}
+
+

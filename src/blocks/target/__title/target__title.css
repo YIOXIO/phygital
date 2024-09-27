@@ -1,0 +1,13 @@
+
+.target__title{
+    color: #070037;
+    font-family: 'Unbounded';
+    font-size: 35.2px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 86.4px; /* 245.455% */
+    letter-spacing: -1.6px;
+    text-transform: capitalize;
+    margin-block-end: 50px;
+}
+

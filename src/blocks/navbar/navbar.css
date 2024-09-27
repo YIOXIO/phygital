@@ -1,18 +1,48 @@
 @import './__link/nabvar__link.css';
 @import './__list/navbar__list.css';
+@import './__list/_logos/navbar__list_logos.css';
+@import './__list/_menu/navbar__list_menu.css';
 
 
-
-.navbar{
+/* .navbar{
     display: flex;
     align-items: center;
     gap: 4.28rem;
     justify-content: space-between;
+} */
+.navbar {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: #FFF;
+    top: 0%;
+    inline-size: 100%;
+    justify-content: space-between;
+    padding-inline: 15px;
+    transition: visibility .4s, opacity .4s , top .4s linear;
+    opacity: 1;
+    visibility: visible;
 }
+
+.navbar.hidden {
+    top: -100px;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
 
 
 @media (width >= 1200px){
     .navbar{
         justify-content: inherit;
+        position: relative;
+        padding: 0;
+        gap: 4.28rem;
+        background-color: transparent;
+        flex-wrap: nowrap;
     }
 }

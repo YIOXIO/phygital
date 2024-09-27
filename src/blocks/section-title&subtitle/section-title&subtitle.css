@@ -1,0 +1,37 @@
+
+.section-title{
+    color: #1652EE;
+    font-family: 'Gotham Pro';
+    font-size: clamp(1.563rem, 0.837rem + 3.628vw, 5rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 97.6%; 
+    letter-spacing: clamp(0.149rem, 0.345rem + -0.543vw, -0.288rem);
+    margin-block: 0 111.2px;
+}
+
+.section-title_news{
+    color: #FFF;
+}
+
+.section-subtitle{
+    color: #070037;
+    font-family: 'Gotham Pro';
+    font-size: clamp(1.563rem, 0.837rem + 3.628vw, 5rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 97.6%;
+    letter-spacing: clamp(0.149rem, 0.345rem + -0.543vw, -0.288rem);
+}
+
+.section-title_mission{
+    color: #fff;
+}
+
+@media (width >= 525px){
+    .section-title, .section-subtitle {
+        font-family: 'Unbounded';
+    }
+}
+
+

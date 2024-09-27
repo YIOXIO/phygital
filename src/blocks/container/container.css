@@ -3,35 +3,33 @@
 .container-l{
     max-inline-size: 1763.2px;
     margin-inline: auto;
-    padding-block-start: 150px;
+    padding-inline: 2.5vw;
+    padding-block-start: clamp(3.125rem, 1.806rem + 6.596vw, 9.375rem);
 }
 
 .container-xl{
-    max-inline-size: 1856px;
+    max-inline-size: 1836px;
     margin-inline: auto;
-    padding-inline: 1.5vw;
     position: relative;
 }
 
 .container-project{
     background-image: linear-gradient(0deg, #C7E6FF -0.1%, #E6EBFF 74.97%);
-    border-radius: 60px 60px 0 0;
-    padding-block-end: 184px;
+    border-radius: 40px 40px 0 0;
 }
 
 .container-team{
     background-color: #FFF;
-    border-radius: 60px 60px 0 0;
+    border-radius: 40px 40px 0 0;
 }
 
 .container-regulation{
     border-radius: 40px 40px 0px 0px;
 background: linear-gradient(0deg, #C7E6FF -0.1%, #E6EBFF 74.97%);
-padding-block-end: 72px;
 }
 
 @media (width >= 1240px){
-    .container-xl{
+    .container-l{
         padding-inline: 0;
     }
 }

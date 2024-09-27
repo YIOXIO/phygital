@@ -1,18 +1,32 @@
-.navbar__list{
-    display: none;
-    gap: 13.5rem;
-    align-items: center;
-}
-
-.navbar__list > ul{
-    align-items: center;
+.navbar__list>ul {
+    align-items: flex-start;
     background-color: #ebeeff;
     border: 1.6px solid #e3ddf2;
-    border-radius: 64px;
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
     padding-block: 19px;
     padding-inline: 7px;
+}
+
+.navbar__list>ul>li{
+    display: flex;
+    flex: 1 0 33%;
+}
+
+.navbar__list{
+    display: none;
+    gap: 12em;
+    align-items: center;
+}
+
+
+.navbar__list_logos{
+    background-color: transparent;
+    border: none;
+    gap: 2px;
+    flex: none;
+    display: flex;
 }
 
 
@@ -20,7 +34,24 @@
     .navbar__list{
         display: flex;
     }
+    .navbar__list > ul{
+        align-items: center;
+        background-color: #ebeeff;
+        border: 1.6px solid #e3ddf2;
+        border-radius: 64px;
+        display: flex;
+        gap: 5px;
+        padding-block: 19px;
+        padding-inline: 7px;
+        flex-wrap: nowrap;
+
+    }
     .burger-menu{
         display: none;
     }
+    .navbar__list>ul>li{
+        flex-grow: 0;
+        display: block;
+    }
+    
 }

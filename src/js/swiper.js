@@ -14,15 +14,18 @@ const swiper = new Swiper('.swiper', {
   loop: false, // Бесконечный цикл
   speed: 400, // Скорость переключения слайдов (в миллисекундах)
   spaceBetween: 10, // Расстояние между слайдами (в пикселях)
- grabCursor:true,
+  grabCursor:true,
+  slidesPerView: 1,
+
 
   // Адаптивность
   breakpoints: {
     320: {
-        slidesPerView: 1.5,
+        slidesPerView: 1,
     },
     640: {
-      slidesPerView: 2, // Количество видимых слайдов на экранах шириной 640px и более
+      slidesPerView: 1.2, // Количество видимых слайдов на экранах шириной 640px и более
+      spaceBetween: 40,
     },
     1024: {
       slidesPerView: 3.1, // Количество видимых слайдов на экранах шириной 1024px и более

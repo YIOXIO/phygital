@@ -1,0 +1,23 @@
+
+
+
+.hero__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-block-start: 230px;
+    margin-inline-start: 20px;
+    z-index: 1;
+}
+
+@media ( width >= 768px){
+    .hero__title-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-block-start: 370px;
+        margin-inline-start: 60px;
+        position: relative;
+        z-index: 1;
+    }
+}

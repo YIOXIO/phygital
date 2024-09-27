@@ -1,1 +1,6 @@
 @import './__logo/header__logo.css';
+.header{
+    margin-block-start: clamp(0rem, -0.417rem + 2.083vw, 2rem);
+    position: relative;
+    z-index: 4;
+}

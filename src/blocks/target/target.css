@@ -1,0 +1,7 @@
+@import './__description/target__description.css';
+@import './__title/target__title.css';
+@import './__wrapper/target__wrapper.css';
+
+.target{
+ margin-block-end: 193px;
+}

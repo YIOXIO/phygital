@@ -1,0 +1,22 @@
+.partner{
+    margin-block-end: 230px;
+}
+
+
+.partner__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 12px;
+
+}
+
+.partner__wrapper{
+    background: #fff;
+    border-radius: 43.2px;
+    max-block-size: 201.6px;
+    padding-block: 64px;
+    padding-inline: 60.91px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

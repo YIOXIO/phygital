@@ -6,7 +6,7 @@
 
 
 /* Стили для Header */
-@import './blocks/header/__logo/header__logo.css';
+@import './blocks/header/header.css';
 
 @import './blocks/hero/hero.css';
 
@@ -16,145 +16,26 @@
 @import './blocks/page-articles.css';
 
 
-@import './blocks/footer.css';
+@import './blocks/footer/footer.css';
+@import './blocks/section-title&subtitle/section-title&subtitle.css';
+@import './blocks/root/root.css';
 
+@import './blocks/target/target.css';
 
+@import './blocks/mission/mission.css';
+@import './blocks/team/team.css';
+@import './blocks/partner/partner.css';
+@import './blocks/regulation/regulation.css';
 
-.header{
-    margin-block-start: clamp(0rem, -0.417rem + 2.083vw, 2rem);
-    margin-inline: clamp(0rem, -0.417rem + 2.083vw, 2rem);
-    position: relative;
-    z-index: 4;
-}
+@import './blocks/news/news.css';
+@import './blocks/mobile.css';
 
-
-.header__border{
-    position: absolute;
-    z-index: -1;
-    top:50%; 
-    left:50%; 
-    transform:translate(-50%, -50%); 
-    border-radius: 60px;
-}
-
-
-
-.navbar__list_logos{
-    background-color: transparent;
-    border: none;
-    gap: 2px;
-    flex: none;
-    display: flex;
-}
-
-
-
-.hero {
-    position: relative;
-    z-index: 1;
-    margin-block-start: -6rem;
-}
-
-.hero-title{
-    color: #1652EE;
-    font-family: 'Unbounded';
-    font-size: clamp(1.75rem, 0.071rem + 5.165vw, 6.063rem);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 97.599%;
-    letter-spacing: -4.608px;
-    text-align: end;
-
-}
-
-.hero-subtitle{
-    color: #070037;
-    font-family: Unbounded;
-    font-size: clamp(1.75rem, 0.071rem + 5.165vw, 6.063rem);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 97.599%; 
-    letter-spacing: -4.608px;
-}
-.title-wrapper{
-    position: absolute;
-    top: 50%;
-    left:4.5%;
-}
-
-
-
-.section-title{
-    color: #1652EE;
-    font-family: 'Unbounded';
-    font-size: clamp(1.75rem, 1.073rem + 3.385vw, 5rem);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 97.6%; 
-    letter-spacing: -4.608px;
-    /* margin-inline: 97.6px 59.2px; */
-    margin-block: 0 111.2px;
-}
-
-.section-title_news{
-    color: #FFF;
-}
-
-.section-subtitle{
-    color: #070037;
-    font-family: 'Unbounded';
-    font-size: clamp(1.75rem, 1.073rem + 3.385vw, 5rem);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 97.6%;
-    letter-spacing: -4.608px;
-}
-
-
-.root{
-    background: linear-gradient(180deg,#e8ecfe 4% 13%,#c9ebf8 14.03%,#3ae2f4 15.36%,#476272 27.34% 26%,#494f60 34.22%,#494f60 40%,#476272 42%,#3ae2f4 48%,#c9ebf8 54%,#e8ecff 61%,#e8ecfe 51%,#c9ebf8 66.49%,#3ae2f4 70.64%,#476272 76.59%,#494F60 82%,#494f60 82%,#476272 84%,#3ae2f4 91%,#c9ebf8 94%,#e8ecfe 100%);
-    zoom: .85;
-}
 
 .container__hero{
     position: relative;
 }
 
 
-.target-title{
-    color: #070037;
-    font-family: 'Unbounded';
-    font-size: 35.2px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 86.4px; /* 245.455% */
-    letter-spacing: -1.6px;
-    text-transform: capitalize;
-}
-
-.target-description{
-    color: #83809B;
-    font-family: "Gotham Pro";
-    font-size: 27.2px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px; /* 147.059% */
-    letter-spacing: -1.6px;
-    max-inline-size: 1300px;
-}
-
-.target-wrapper{
-    background-image: url('./svg/target-border.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-block: 32px 42px;
-    padding-inline: 68px 44px;
-}
-
-.target{
-    /* background: linear-gradient(180deg, #E8ECFE 0%, #C9EBF8 14.03%, #3AE2F4 28.36%, #476272 51.34%, #494F60 96.22%); */
-    padding-block-end: 140px;
-}
 
 
 
@@ -175,63 +56,71 @@
 
 .project__description{
     color: #83809B;
-    font-family: 'Inter';
-    font-size: 27.2px;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: clamp(1.137rem, 1.024rem + 0.57vw, 1.688rem);
     font-style: normal;
     font-weight: 500;
-    line-height: 40px; /* 147.059% */
-    letter-spacing: -1.6px;
+    letter-spacing: normal;
+    line-height: 1.4;
 }
 
 .project__list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
     gap: 35.2px;
 }
 
-.section-title_mission{
-    color: #fff;
+@media (width >= 525px){
+    .project__list{
+        grid-template-columns: repeat(auto-fit,minmax(26em,1fr));
+
+    }
+
+    .mission__list{
+        grid-template-columns: repeat(auto-fit,minmax(23em,1fr));
+
+    }
 }
 
 
 .mission__card{
-    background-repeat: no-repeat;
-    background-image: url('./svg/background-mission-card.svg');
     border-radius: 31.389px;
     padding-block:108.12px 91.2px;
     padding-inline: 38.4px 26.68px;
     block-size: 100%;
-    background-size: cover;
+    clip-path: polygon( 100% 91.786%,100% 91.786%,99.862% 93.119%,99.464% 94.382%,98.826% 95.561%,97.97% 96.637%,96.919% 97.594%,95.693% 98.415%,94.314% 99.083%,92.805% 99.581%,91.186% 99.892%,89.48% 100%,68.063% 100%,10.576% 100%,10.576% 100%,8.869% 99.892%,7.25% 99.581%,5.741% 99.083%,4.362% 98.415%,3.137% 97.594%,2.085% 96.637%,1.229% 95.561%,0.592% 94.382%,0.193% 93.119%,0.055% 91.786%,0.055% 8.326%,0.055% 8.326%,0.193% 6.994%,0.592% 5.73%,1.229% 4.551%,2.085% 3.475%,3.137% 2.518%,4.362% 1.697%,5.741% 1.029%,7.25% 0.531%,8.869% 0.22%,10.576% 0.112%,66.936% 0.112%,66.936% 0.112%,68.642% 0.22%,70.261% 0.531%,71.77% 1.029%,73.149% 1.697%,74.375% 2.518%,75.426% 3.475%,76.282% 4.551%,76.92% 5.73%,77.318% 6.994%,77.456% 8.326%,77.456% 9.499%,77.456% 9.499%,77.594% 10.832%,77.992% 12.096%,78.63% 13.274%,79.486% 14.35%,80.537% 15.307%,81.763% 16.128%,83.142% 16.796%,84.651% 17.295%,86.27% 17.606%,87.977% 17.713%,89.48% 17.713%,89.48% 17.713%,91.186% 17.821%,92.805% 18.132%,94.314% 18.63%,95.693% 19.298%,96.919% 20.119%,97.97% 21.076%,98.826% 22.152%,99.464% 23.331%,99.862% 24.595%,100% 25.927%,100% 91.786% );
+    background-image: linear-gradient(0deg, #C1E2FF 0%, #FFF 42.71%);
+
 }
 
 .mission__list  li:nth-child(1) > .mission__card:first-child{
-    background-image: linear-gradient(0deg, #C1E2FF 0%, #FFF 42.71%);
+    clip-path: none;
 }
 
 .mission__card-name{
     color: #070037;
     font-family: 'Unbounded';
-    font-size: 35.2px;
+    font-size: clamp(1.5rem, 1.355rem + 0.725vw, 2.2rem);
     font-style: normal;
     font-weight: 700;
-    line-height: 86.4px; /* 245.455% */
-    letter-spacing: -1.6px;
+    line-height: 245.455%; /* 245.455% */
+    letter-spacing: clamp(0rem, 0.021rem + -0.104vw, -0.1rem);
     text-transform: capitalize;
 }
 
 .mission__card-description{
     color: #83809B;
-    font-family: "Gotham Pro";
-    font-size: 27.2px;
+    font-family: "'Gotham Pro', sans-serif";
+    font-size: clamp(1.137rem, 1.024rem + 0.57vw, 1.688rem);
     font-style: normal;
     font-weight: 400;
-    line-height: 40px; /* 147.059% */
-    letter-spacing: -1.6px;
+    line-height: 147.059%; /* 147.059% */
+    letter-spacing: clamp(0rem, 0.021rem + -0.104vw, -0.1rem);
 }
 
 .mission__list{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     gap: 18.84px;
 }
 
@@ -239,29 +128,31 @@
     flex: 1 0 24%;
 }
 .mission__list > li:nth-child(3){
-    transform: translateY(-30px);
+    transform: translateY(clamp(0rem, 1.313rem + -2.735vw, -1.875rem));
 }
 
 
 .team__card-name{
     color: #070037;
     font-family: 'Unbounded';
-    font-size: 35.2px;
+    font-size: clamp(1.5rem, 1.355rem + 0.725vw, 2.2rem);
     font-style: normal;
     font-weight: 500;
-    line-height: 40px; /* 113.636% */
-    letter-spacing: -1.6px;
+    line-height: 113.636%; /* 113.636% */
+    letter-spacing: clamp(0rem, 0.021rem + -0.104vw, -0.1rem);
     margin-block-end: 19.2px;
+    max-inline-size: 460px;
 }
 
 .team__card-description{
     color: #83809B;
-    font-family: "Gotham Pro";
-    font-size: 27.2px;
+    font-family: 'Gotham Pro',sans-serif;
+    font-size: clamp(1.137rem, 1.024rem + 0.57vw, 1.688rem);
     font-style: normal;
     font-weight: 400;
-    line-height: 40px; /* 147.059% */
-    letter-spacing: -1.6px;
+    line-height: 147.059%; /* 147.059% */
+    letter-spacing: clamp(0rem, 0.021rem + -0.104vw, -0.1rem);
+    max-inline-size: 460px;
 }
 
 .team__card{
@@ -272,64 +163,51 @@
 .team__card-img{
     inline-size: 100%;
     object-fit: cover;
-    margin-block-end: 35.2px;
+    margin-block-end: clamp(1.5rem, 1.355rem + 0.725vw, 2.2rem);
     border-radius: 42.3px;
     aspect-ratio: 1;
 }
 
-/* .hero,.target, .project, .mission, .team, .partner{
-    margin-block-end: 102.4px;
-} */
 
-.partner__list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-    gap: 12px;
-
-}
-
-.partner__wrapper{
-    background: #fff;
-    border-radius: 43.2px;
-    max-block-size: 201.6px;
-    padding-block: 64px;
-    padding-inline: 60.91px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .regulation__list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(552px,1fr));
+    display: flex;
+    gap: clamp(4.063rem, 4.458rem + -1.979vw, 2.188rem);
+    row-gap: 35px;
+    flex-wrap: wrap;
+}
+
+.regulation__list li{
+    flex: 1 0 25%;
 }
 
 .regulation__card{
     display: flex;
-    padding: 46.4px 32px 64px 38.4px;
+    padding-block: 46.4px 64px;
+    padding-inline: clamp(0.75rem, 0.491rem + 1.294vw, 2rem) clamp(1.125rem, 0.866rem + 1.294vw, 2.375rem);
     flex-direction: column;
     align-items: flex-start;
     gap: 28.8px;
     flex-shrink: 0;
     border-radius: 43.2px;
     background: #FFF;    
-    max-inline-size: 552px;   
+    block-size: 100%; 
 }
 
 .regulation__card-img{
-    max-inline-size: 81.6px;
+    max-inline-size:clamp(3.375rem, 3.018rem + 1.786vw, 5.1rem);
     object-fit: contain;
     inline-size: 100%;
 }
 
 .regulation__card-description{
     color: #83809B;
-    font-family: 'Inter';
-    font-size: 27.2px;
+    font-family:'Gotham Pro', sans-serif;;
+    font-size: clamp(1.137rem, 1.024rem + 0.57vw, 1.688rem);
     font-style: normal;
     font-weight: 500;
-    line-height: 40px; /* 147.059% */
-    letter-spacing: -1.6px;
+    line-height: 147.059%; /* 147.059% */
+    letter-spacing: clamp(0rem, 0.021rem + -0.104vw, -0.1rem);
 }
 
 .regulation__card-button{
@@ -338,15 +216,16 @@
     background-color: #EBEEFF;
     color: #1652EE;
     text-align: center;
-    font-family: "Gotham Pro";
-    font-size: 27.2px;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: clamp(1.137rem, 1.024rem + 0.57vw, 1.688rem);
     font-style: normal;
     font-weight: 400;
-    line-height: 28.8px; /* 105.882% */
+    line-height: 105.882%; /* 105.882% */
     letter-spacing: -0.896px;
     padding-block: 22px;
-    padding-inline: 164px;
-    transition:background-color .3s linear, color .3s linear;;
+    margin-block-start: auto;
+    transition:background-color .3s linear, color .3s linear;
+    inline-size: 100%;
 }
 
 .regulation__card-button:hover{
@@ -354,111 +233,15 @@
     color: #EBEEFF;
 }
 
-.news__card{
-    border-radius: 43.2px 43.2px 43.2px 0px;
-    cursor: pointer;
-}
 
-
-.news__card-img{
-    inline-size: 100%;
-    object-fit: cover;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    vertical-align: bottom;
-    max-block-size: 330px;
-    aspect-ratio: 1;
-}
-
-.news__wrapper{
-    background-image: url('./svg/news-card-border.svg');
-    background-size:cover;
-    background-repeat: no-repeat;
-    padding-inline: 38.4px 32px;
-    padding-block: 46.4px 64px;
-    position: relative;
-    min-block-size: 342px;
-    margin-block-start: -1px;
-}
-
-.news__card-title{
-    color: #070037;
-    font-family: 'Unbounded';
-    font-size: 35.2px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 40px; /* 113.636% */
-    letter-spacing: -1.6px;
-    margin-block-end: 28.8px;
-}
-
-.news__card-description{
-    color: #83809B;
-    font-family: 'Inter';
-    font-size: 27.2px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 40px; /* 147.059% */
-    letter-spacing: -1.6px;
-    text-overflow: ellipsis;
-    overflow: hidden; 
-    display: -webkit-box;
-    -webkit-line-clamp: 4; 
-    -webkit-box-orient: vertical;
-}
 
 .swiper-news-slide{
     max-inline-size: 553.58px;
 }
 
-.news__card-icon{
-    background-color: #EBEEFF;
-    border-radius: 60px;
-    max-inline-size: 80px;
-    max-block-size: 80px;
-    object-fit: contain;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    transition:  background-color .3s , rotate .2s linear;
-
+.page-article-bottom-text_hero{
+    color: #1652EE;
+    left: 6.6%;
 }
 
-.news__card path{
-    stroke: #1652EE;
-}
-.news__card:hover .news__card-icon path{
-    stroke: #FFF;    
 
-}
-.news__card:hover .news__card-icon{
-    rotate: -45deg;
-    background-color: #1652EE;
-}
-
-.news__button{
-    color: #FFF;
-    text-align: center;
-    font-family: "Gotham Pro";
-    font-size: 27.2px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28.8px; /* 105.882% */
-    letter-spacing: -0.896px;
-    padding: 22.4px 20.6px;
-    padding-inline: 86.4px 24.88px;
-    background-color: #1652EE;
-    border-radius: 47.084px;
-    display: flex;
-    max-inline-size: 476px;
-    gap: 35px;
-}
-
-.news__slider{
-    margin-block-end: 124px;
-}
-
-.news__button img{
-    padding-block-start: 5px;
-    inline-size: 12px;
-}

@@ -1,0 +1,12 @@
+@media (width <= 1200px){
+    .navbar__list_menu{
+        display: none;
+        
+    }
+    .navbar__list_menu-active{
+        z-index: 998;
+        display: block;
+        padding-block-end: 40px;
+        inline-size: 100%;
+    }
+}

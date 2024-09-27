@@ -20,7 +20,6 @@
 
 }
 
-
 /* Активное состояние */
 .burger-menu.active span:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
