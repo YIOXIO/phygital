@@ -16,35 +16,6 @@
         opacity: 1;
     }
     
-    /* 
-    .page-article-top{
-        transform: translate(0%, 0%);
-        position: absolute;
-        top: -6%;
-        left: 0;
-        color: #1652ee;
-        font-family: 'Gotham Pro';
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        letter-spacing: -.8px;
-    } */
-    /* 
-    .page-article-top p {
-        padding-block-start: 20px;
-    
-    } */
-    
-    /* .page-article-top_project{
-        top: -4.6%;
-    }
-    .page-article-top_document{
-        top: -6.1%;
-    }
-    .page-article-top_document p{
-        left: 26.3%;
-    } */
-    
     .page-article-bottom{
         position: absolute;
     
@@ -60,10 +31,10 @@
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
-        line-height: 27.2px; /* 113.333% */
+        line-height: 27.2px; 
         letter-spacing: -0.8px;
         text-transform: lowercase;
-    opacity: 1;
+        opacity: 1;
 
     }
     
@@ -152,24 +123,6 @@
         background-color: #FFF;
     }
     
-    
-    
-    /* .page-article-top{
-        max-inline-size: 380px;
-        inline-size: 100%;
-        max-block-size: 182px;
-        block-size: 100%;
-    } */
-    
-    
-    /* 
-    .page-article-top_team::before{
-        background-color: #FFF;
-    }
-    
-    .page-article-top_team{
-        top: -5.3%;
-    } */
     
     .page-article-bottom_project::before{
     background-color: #CAE6FF;

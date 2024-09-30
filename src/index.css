@@ -3,7 +3,7 @@
 @import './vendor/global.css';
 @import './vendor/fonts/fonts.css';
 @import './blocks/container/container.css';
-
+@import './blocks/primary-button/primary-button.css';
 
 /* Стили для Header */
 @import './blocks/header/header.css';
@@ -29,6 +29,9 @@
 
 @import './blocks/news/news.css';
 @import './blocks/mobile.css';
+@import './blocks/popup/popup.css';
+@import './blocks/popup/_opened/popup_opened.css';
+@import './blocks/popup/__close-button/popup__close-button.css';
 
 
 .container__hero{
@@ -210,28 +213,7 @@
     letter-spacing: clamp(0rem, 0.021rem + -0.104vw, -0.1rem);
 }
 
-.regulation__card-button{
-    border-radius: 47.084px;
-    border: 1.6px solid #E3DDF2;
-    background-color: #EBEEFF;
-    color: #1652EE;
-    text-align: center;
-    font-family: 'Gotham Pro', sans-serif;
-    font-size: clamp(1.137rem, 1.024rem + 0.57vw, 1.688rem);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 105.882%; /* 105.882% */
-    letter-spacing: -0.896px;
-    padding-block: 22px;
-    margin-block-start: auto;
-    transition:background-color .3s linear, color .3s linear;
-    inline-size: 100%;
-}
 
-.regulation__card-button:hover{
-    background-color: #1652EE;
-    color: #EBEEFF;
-}
 
 
 
@@ -245,3 +227,8 @@
 }
 
 
+.popup__iframe{
+    max-inline-size: 1200px;
+    inline-size: 100%;
+    min-block-size: 600px;
+}

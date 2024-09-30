@@ -36,7 +36,7 @@
                         <a class="navbar__link" href="#">главная</a>
                     </li>
                     <li>
-                        <a class="navbar__link" href="#">участники</a>
+                        <a class="navbar__link" href="./participants.html">участники</a>
                     </li>
                     <li>
                         <a class="navbar__link" href="#">регламенты</a>
@@ -326,7 +326,7 @@
                     <p class="regulation__card-description">
                         Создать цифровую платформу для обмена опытом по организации Фестиваля «Фиджитал-футбол 
                     </p>
-                    <a class="regulation__card-button" href="#">Скачать</a>
+                    <a class="primary-button" href="<%=require('./pdf/Профстандарт тренер-преподаватель.rtf')%>">Скачать</a>
                 </article>
                 </li>
                 <li>
@@ -335,7 +335,7 @@
                     <p class="regulation__card-description">
                         Провести стратегическую сессию специалистов для разработки дорожной карты 
                     </p>
-                    <a class="regulation__card-button" href="#">Скачать</a>
+                    <a class="primary-button regulation__card-button" href="<%=require('./pdf/Обзор Регламента РФС по разрешению споров.pdf')%>">Открыть</a>
                 </article>
                 </li>
                 <li>
@@ -344,7 +344,7 @@
                     <p class="regulation__card-description">
                         Провести социологическое исследование участников по улучшению качества  
                     </p>
-                    <a class="regulation__card-button" href="#">Скачать</a>
+                    <a class="primary-button regulation__card-button" href="<%=require('./pdf/Дисциплинарный регламент РФС (редакция на 13 июля 2024 года).pdf')%>">Открыть</a>
                 </article>
                 </li>
             </ul>
@@ -414,6 +414,13 @@
         </div>
     </div>
 </section>  
+<section class="popup popup_document">
+    <div class="popup__container">
+        <button class="popup__close-button primary-button">X</button>        
+        <iframe allowfullscreen="true"  class="popup__iframe"></iframe>
+        <button class="primary-button download-button" >Скачать</button>
+    </div>
+</section>
 </main>
  <footer class="footer">
     <div class="container-xl">

@@ -15,7 +15,10 @@ module.exports = {
 
     mode: 'development',
     devServer: {
-        static: path.resolve(__dirname, './dist'),
+        static: {
+            directory: path.resolve(__dirname, './dist'),
+            publicPath: '/'
+        },
         compress: true,
         port: 8080,
 
@@ -29,8 +32,11 @@ module.exports = {
                 exclude: '/node_modules'
             },
             {
-                test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf|webp)$/,
-                type: 'asset/resource'
+                test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf|webp|pdf|rtf)$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/[name][ext]'
+                }
             },
             {
                 test: /\.css$/,
@@ -43,11 +49,17 @@ module.exports = {
                     'postcss-loader'
                 ]
             },
+            
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html'
+            filename: 'index.html',
+            template: './src/index.html',
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/participants.html',
+            filename: 'participants.html'
         }),
 
         new CleanWebpackPlugin(),

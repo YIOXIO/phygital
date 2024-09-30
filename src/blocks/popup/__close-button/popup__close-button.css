@@ -1,0 +1,11 @@
+.popup__close-button {
+    align-self: flex-end;
+    padding: 11px;
+    font-size: 14px;
+    font-weight: 700;
+    inline-size: 33px;
+    block-size: 33px;
+    display: flex;
+    align-items: center;
+    aspect-ratio: 1;
+}

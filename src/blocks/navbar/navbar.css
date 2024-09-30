@@ -4,12 +4,7 @@
 @import './__list/_menu/navbar__list_menu.css';
 
 
-/* .navbar{
-    display: flex;
-    align-items: center;
-    gap: 4.28rem;
-    justify-content: space-between;
-} */
+
 .navbar {
     align-items: center;
     display: flex;
@@ -41,8 +36,11 @@
         justify-content: inherit;
         position: relative;
         padding: 0;
-        gap: 4.28rem;
+        gap: clamp(2.88rem, 0.238rem + 3.522vw, 4.28rem);
         background-color: transparent;
         flex-wrap: nowrap;
     }
 }
+
+
+

@@ -1,0 +1,35 @@
+@import './_opened/popup_opened.css';
+@import './__container/popup__container.css';
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #000000bd;
+    transition: visibility .2s ease-in, opacity .2s ease-in;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+/* @media screen and (max-width: 600px) {
+    .popup {
+        max-width: 85vw;
+        margin: 0 auto;
+    }
+} */
+
+/* @media screen and (max-width: 320px) {
+    .popup {
+        max-width: 320px;
+        margin: 0 auto;
+
+    }
+} */
