@@ -2,8 +2,8 @@
     text-wrap: nowrap;
     border-radius: 10px;
     color: #1652ee;
-    font-family: 'Gotham Pro';
-    font-size: clamp(0.875rem, -0.068rem + 1.258vw, 1.375rem);
+    font-family: 'Unbounded';
+    font-size: clamp(0.762rem, 0.291rem + 0.629vw, 1.012rem);
     font-style: normal;
     font-weight: 400;
     line-height: 18.8px;

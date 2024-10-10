@@ -1,6 +1,7 @@
 .header__logo{
-    max-inline-size: clamp(3.438rem, -1.515rem + 6.604vw, 6.063rem);
+    max-inline-size: 105px;
     inline-size: 100%;
     object-fit: contain;
-    aspect-ratio: 1;
+    aspect-ratio: 1/0;
+
 }

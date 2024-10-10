@@ -9,7 +9,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js',
+        filename: 'assets/js/[name].js',
         publicPath: ''
     },
 
@@ -21,7 +21,6 @@ module.exports = {
         },
         compress: true,
         port: 8080,
-
         open: true
     },
     module: {
@@ -32,10 +31,31 @@ module.exports = {
                 exclude: '/node_modules'
             },
             {
-                test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf|webp|pdf|rtf)$/,
+                test: /\.(png|jpg|gif|webp)$/,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'assets/[name][ext]'
+                    filename: 'assets/img/[name][ext]'
+                }
+            },
+            {
+                test: /\.svg$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/svg/[name][ext]'
+                }
+            },
+            {
+                test: /\.(woff(2)?|eot|ttf|otf)$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/fonts/[name][ext]'
+                }
+            },
+            {
+                test: /\.(pdf|rtf|docx)$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/documents/[name][ext]'
                 }
             },
             {
@@ -49,7 +69,13 @@ module.exports = {
                     'postcss-loader'
                 ]
             },
-            
+            {
+                test: /\.json$/,
+                type: 'json',
+                generator: {
+                    filename: 'assets/[name][ext]'
+                }
+            }
         ]
     },
     plugins: [
@@ -61,9 +87,7 @@ module.exports = {
             template: './src/participants.html',
             filename: 'participants.html'
         }),
-
         new CleanWebpackPlugin(),
-        new MiniCssExtractPlugin(),
+        new MiniCssExtractPlugin()
     ]
 };
-

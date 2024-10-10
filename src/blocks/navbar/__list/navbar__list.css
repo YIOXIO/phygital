@@ -4,9 +4,9 @@
     border: 1.6px solid #e3ddf2;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
     padding-block: 19px;
     padding-inline: 7px;
+    gap: 5px;
 }
 
 .navbar__list>ul>li{
@@ -40,11 +40,14 @@
         border: 1.6px solid #e3ddf2;
         border-radius: 64px;
         display: flex;
-        gap: 5px;
+        gap: 0;
         padding-block: clamp(0.25rem, -1.519rem + 2.358vw, 1.188rem);
         padding-inline: 7px;
         flex-wrap: nowrap;
 
+    }
+    .navbar__list:nth-child(3) {
+        margin-block-start: 10px;
     }
     .burger-menu{
         display: none;

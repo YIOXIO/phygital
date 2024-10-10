@@ -1,0 +1,5 @@
+.navbar__list_logos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(24%,1fr));
+    max-inline-size: 480px;
+}

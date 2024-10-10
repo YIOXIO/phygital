@@ -15,8 +15,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-block-start: 370px;
-        margin-inline-start: 60px;
+        margin-block-start: clamp(16.25rem, 11.306rem + 10.3vw, 23.125rem);
+        margin-inline-start: clamp(0.625rem, -1.622rem + 4.682vw, 3.75rem);
         position: relative;
         z-index: 1;
     }

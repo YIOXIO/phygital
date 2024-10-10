@@ -6,7 +6,7 @@
 
 
 .navbar {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     gap: 20px;
     justify-content: flex-start;
@@ -33,12 +33,9 @@
 
 @media (width >= 1200px){
     .navbar{
-        justify-content: inherit;
-        position: relative;
-        padding: 0;
-        gap: clamp(2.88rem, 0.238rem + 3.522vw, 4.28rem);
         background-color: transparent;
         flex-wrap: nowrap;
+        position: absolute;
     }
 }
 

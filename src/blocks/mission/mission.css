@@ -1,3 +1,132 @@
 .mission{
     margin-block-end: 190px;
 }
+
+
+
+
+
+
+
+.mission__wrapper{
+    border-radius: 40px;
+    background: linear-gradient(352deg, #C1E2FF 9.03%, #CDE7FF 47.14%, #FFF 94.58%);
+    padding-inline: 36px 41px;
+    padding-block: 61px 65px;
+}
+
+.mission__title{
+    color: #070037;
+
+    font-family: Unbounded;
+    font-size: 35.2px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    margin-block-end: 26px;
+}
+
+.mission__title_blue{
+    color: #1652EE;
+
+}
+
+.mission__subtitle{
+    color: #070037;
+    font-family: Gotham Pro;
+    font-size: 27.2px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 147.059% */
+    letter-spacing: -1.6px;
+    margin-block-end: 27px;
+}
+
+.mission__block-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 34px;    
+}
+
+.mission__block-list li{
+    flex: 1 0 25%;
+}
+
+
+.mission__description{
+    color: #83809B;
+    font-family: Gotham Pro;
+    font-size: 27.2px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 147.059% */
+    letter-spacing: -1.6px;
+    margin-block-end: 53px;
+}
+
+.mission__block{
+    padding-block: 46.4px 64px;
+    padding-inline: 38.4px 32px;
+    background-color: #FFF;
+    border-radius: 43.2px;
+    block-size: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.mission__block-list>li:last-child>.mission__block{
+    background-color: transparent;
+    justify-content: center;
+}
+
+.mission__block-img{
+    max-inline-size: 81px;
+    max-block-size: 81px;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: contain;
+}
+
+.mission__block-title{
+    color: #070037;
+    font-family: Gotham Pro;
+    font-size: 27.2px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 147.059% */
+    letter-spacing: -1.6px;
+}
+
+.mission__block-description{
+    color: #83809B;
+    font-family: Gotham Pro;
+    font-size: 27.2px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37.8px; /* 138.971% */
+    letter-spacing: -1.6px;
+}
+
+.mission__inner{
+    display: flex;
+    gap: 20px;
+    block-size: 81px;
+    align-items: flex-end;
+}
+
+.mission__block-description-bold{
+    color: #0D0932;
+    font-family: Unbounded;
+    font-size: 27.2px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 147.059% */
+    letter-spacing: -1.6px;
+    max-inline-size: 420px;
+}
+.mission__block-description-bold_blue{
+    color: #1652EE;
+
+}

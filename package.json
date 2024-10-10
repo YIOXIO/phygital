@@ -2,7 +2,7 @@
   "name": "phygital-project",
   "version": "1.0.0",
   "repository": {
-    "url": ""
+    "url": "git+https://github.com/yioxio/phygital.git"
   },
   "description": "",
   "main": "index.js",
@@ -10,7 +10,8 @@
     "build": "webpack --mode production",
     "dev": "webpack serve",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "wp": "webpack --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -30,6 +31,7 @@
     "html-webpack-plugin": "^5.5.1",
     "mini-css-extract-plugin": "^2.7.5",
     "postcss-loader": "^7.2.4",
+    "replace-in-file-webpack-plugin": "^1.0.6",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.3"
   },

@@ -33,6 +33,13 @@
 @import './blocks/popup/_opened/popup_opened.css';
 @import './blocks/popup/__close-button/popup__close-button.css';
 
+@import './blocks/tabs/tabs.css';
+
+
+
+
+
+
 
 .container__hero{
     position: relative;
@@ -174,10 +181,10 @@
 
 
 .regulation__list{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(clamp(17.5rem, 6.713rem + 22.472vw, 32.5rem), 1fr));
     gap: clamp(4.063rem, 4.458rem + -1.979vw, 2.188rem);
     row-gap: 35px;
-    flex-wrap: wrap;
 }
 
 .regulation__list li{
@@ -232,3 +239,5 @@
     inline-size: 100%;
     min-block-size: 600px;
 }
+
+

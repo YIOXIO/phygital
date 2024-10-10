@@ -31,11 +31,10 @@
 
 @media (width >= 768px){
     .hero-element{
-    min-block-size: 1072px;
+    min-block-size: clamp(43.25rem, 26.171rem + 35.581vw, 67rem);
     background-position-x: 150%;
     background-position-y: 45%;
     background-size: 101%;
-    margin-block-start: -6rem;
     border-top-right-radius: 60px;
     border-top-left-radius: 60px;
     }

@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Участнки</title>
 </head>
+
 <body class="root">
     <header class="header">
-  
+
         <div class="container-xl">
             <div class="header__navbar-element">
                 <nav class="navbar">
-        
+
                     <ul class="navbar__list navbar__list_logos">
                         <li>
-                        <img class="header__logo header__logo_min-sport" src="<%=require('./img/logos/min-sport-logo.svg')%>" alt="Логотип министерство спорта РФ, на изображение двуглавый орел">    
+                            <img class="header__logo header__logo_min-sport"
+                                src="<%=require('./img/logos/min-sport-logo.svg')%>"
+                                alt="Логотип министерство спорта РФ, на изображение двуглавый орел">
                         </li>
                         <li>
-                        <img class="header__logo" src="<%=require('./img/logos/phygital-logo.png')%>" alt="Логотип фиджитал футбол, на изображение футбольный мяч">    
+                            <img class="header__logo" src="<%=require('./img/logos/phygital-logo.png')%>"
+                                alt="Логотип фиджитал футбол, на изображение футбольный мяч">
                         </li>
                         <li>
-                        <img class="header__logo" src="<%=require('./img/logos/phygital-logo.png')%>" alt="Логотип фиджитал футбол, на изображение футбольный мяч">    
+                            <img class="header__logo" src="<%=require('./img/logos/phygital-logo.png')%>"
+                                alt="Логотип фиджитал футбол, на изображение футбольный мяч">
                         </li>
                     </ul>
                     <div class="burger-menu">
@@ -28,7 +34,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <ul id="burger-menu"  class="navbar__list navbar__list_menu">
+                    <ul id="burger-menu" class="navbar__list navbar__list_menu">
                         <ul>
                             <li>
                                 <a class="navbar__link" href="#">главная</a>
@@ -43,7 +49,7 @@
                                 <a class="navbar__link" href="#">соц.сети</a>
                             </li>
                         </ul>
-            
+
                         <ul>
                             <li>
                                 <a class="navbar__link" href="#">омбен опытом</a>
@@ -62,12 +68,91 @@
                             </li>
                         </ul>
                     </ul>
-        
+
                 </nav>
             </div>
         </div>
-        
-        </header>
-        
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="container-xl">    
+                 <div class="hero-element">
+                    <article class="hero__title-wrapper">
+                        <h1 class="hero__title">Участнки</h1>
+                        <h2 class="hero__subtitle">проекта</h2>
+                    </article>
+                 </div>
+                 <article class="tabs-wrapper">
+                    <li class="tabs-button_active">
+                        <button class="tabs-button ">Тренеру</button>
+                    </li>
+                    <li>
+                        <button class="tabs-button">Судье</button>
+                    </li>
+                    <li>
+                        <button class="tabs-button">Спортсмену</button>
+                    </li>
+                    <li>
+                        <button class="tabs-button">Волонтеру</button>
+                    </li>
+                    <li>
+                        <button class="tabs-button">Зрителю</button>
+                    </li>
+                 </article>
+            </div>
+        </section>
+        <section class="regulation">
+            <div class="container-xl container-regulation container-regulation_participants">
+                <div class="container-l">
+                    <h2 class="section-title"></h2>
+                    <h2 class="section-title">Регламентирующие <span class="section-subtitle">документы проекта</span></h2>
+                    <div class="tabs tabs_documents">
+                        <article class="tab-content">
+                            <ul class="regulation__list"></ul>
+                        </article>
+                    </div>
+                    <h2 class="section-title">Положения  <span class="section-subtitle">и протоколы соревнований</span></h2>
+                    <div class="tabs tabs_regulation">
+                        <article class="tab-content">
+                            <ul class="regulation__list"></ul>
+                        </article>                
+                    </div>                
+                    <h2 class="section-title">Полезные  <span class="section-subtitle">материалы</span></h2>
+                    <div class="tabs tabs_material">
+                        <article class="tab-content">
+                            <ul class="regulation__list regulation__list_video"></ul>
+                        </article>                
+                    </div>                
+                </div>
+            </div>
+        </section>
+        <section class="popup popup_document">
+            <div class="popup__container">
+                <button class="popup__close-button primary-button">X</button>        
+                <iframe allowfullscreen="true"  class="popup__iframe"></iframe>
+                <button class="primary-button download-button" >Скачать</button>
+            </div>
+        </section>
+        <template class="card-template">
+            <article class="regulation__card">
+                <img src="<%=require('./svg/icons/icon1.svg')%>" alt="" class="regulation__card-img">
+                <p class="regulation__card-description">
+                    Провести социологическое исследование участников по улучшению качества
+                </p>
+                <a class="primary-button regulation__card-button"
+                    href="">Открыть</a>
+            </article>
+        </template>
+        <template class="card-template card-template_video">
+            <article class="regulation__card">
+                <p class="regulation__card-description">
+                    Провести социологическое исследование участников по улучшению качества
+                </p>
+                <video controls width="100%" height="100%" src=""  muted loop poster=""></video>
+            </article>
+        </template>
+    </main>
+    
 </body>
+
 </html>
