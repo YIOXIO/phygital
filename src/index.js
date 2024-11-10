@@ -161,6 +161,7 @@ function setupTabs(tabsData) {
     const tabsDocuments = document.querySelector('.tabs_documents .regulation__list');
     const tabsRegulation = document.querySelector('.tabs_regulation .regulation__list');
     const tabsMaterial = document.querySelector('.tabs_material .regulation__list'); 
+    const tabsAdditionally = document.querySelector('.tabs_additionally .regulation__list'); 
 
     tabsWrapper.addEventListener('click', (event) => {
         if (event.target.classList.contains('tabs-button')) {
@@ -183,6 +184,9 @@ function setupTabs(tabsData) {
             if (tabsMaterial) {
                 renderCards(tabData.material, tabsMaterial, '.card-template_video');
             }
+            if (tabsAdditionally) {
+                renderCards(tabData.additionally, tabsAdditionally, '.card-template');
+            }
         }
     });
 
@@ -198,6 +202,9 @@ function setupTabs(tabsData) {
 
     if (tabsMaterial) {
         renderCards(firstTab.material, tabsMaterial, '.card-template_video');
+    }
+    if (tabsAdditionally) {
+        renderCards(firstTab.additionally, tabsAdditionally, '.card-template');
     }
 }
 
