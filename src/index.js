@@ -107,7 +107,18 @@ function renderCards(documents, list, templateSelector) {
     // Проверка на наличие массива и его непустоту
     if (documents && documents.length > 0) {
         documents.forEach(doc => {
-            const card = template.content.cloneNode(true);
+            let cardTemplateSelector = templateSelector;
+
+            // Определяем, какой шаблон использовать в зависимости от расширения файла
+            const fileExtension = doc.file.split('.').pop().toLowerCase();
+            if (['mp4', 'webp'].includes(fileExtension)) {
+                cardTemplateSelector = '.card-template_video';
+            } else if (['pdf', 'docx', 'rtf'].includes(fileExtension)) {
+                cardTemplateSelector = '.card-template';
+            }
+
+            const cardTemplate = document.querySelector(cardTemplateSelector);
+            const card = cardTemplate.content.cloneNode(true);
             const li = document.createElement('li');
             const description = card.querySelector('.regulation__card-description');
             const link = card.querySelector('.regulation__card-button');
@@ -116,7 +127,6 @@ function renderCards(documents, list, templateSelector) {
             description.textContent = doc.description;
 
             if (link) {
-                const fileExtension = doc.file.split('.').pop().toLowerCase();
                 if (['docx', 'rtf'].includes(fileExtension)) {
                     link.textContent = 'Скачать';
                     link.href = doc.file;
