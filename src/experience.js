@@ -30,17 +30,33 @@ function renderCards(documents, list, templateSelector) {
     // Проверка на наличие массива и его непустоту
     if (documents && documents.length > 0) {
         documents.forEach(doc => {
-            const card = template.content.cloneNode(true);
+            let cardTemplateSelector = templateSelector;
+            let fileExtension = null;
+
+            // Определяем, какой шаблон использовать в зависимости от наличия url или расширения файла
+            if (doc.url) {
+                cardTemplateSelector = '.card-template_iframe';
+            } else if (doc.file) {
+                fileExtension = doc.file.split('.').pop().toLowerCase();
+                if (['mp4', 'webp'].includes(fileExtension)) {
+                    cardTemplateSelector = '.card-template_video';
+                } else if (['pdf', 'docx', 'rtf'].includes(fileExtension)) {
+                    cardTemplateSelector = '.card-template';
+                }
+            }
+
+            const cardTemplate = document.querySelector(cardTemplateSelector);
+            const card = cardTemplate.content.cloneNode(true);
             const li = document.createElement('li');
             const description = card.querySelector('.regulation__card-description');
             const link = card.querySelector('.regulation__card-button');
             const video = card.querySelector('video');
+            const iframe = card.querySelector('iframe');
 
             description.textContent = doc.description;
 
             if (link) {
-                const fileExtension = doc.file.split('.').pop().toLowerCase();
-                if (['docx', 'rtf'].includes(fileExtension)) {
+                if (fileExtension && ['docx', 'rtf'].includes(fileExtension)) {
                     link.textContent = 'Скачать';
                     link.href = doc.file;
                     link.target = '_blank'; // Открываем файл в новой вкладке
@@ -59,6 +75,10 @@ function renderCards(documents, list, templateSelector) {
             if (video) {
                 video.src = doc.file;
                 video.poster = doc.poster || '';
+            }
+
+            if (iframe) {
+                iframe.src = doc.url;
             }
 
             li.appendChild(card);
